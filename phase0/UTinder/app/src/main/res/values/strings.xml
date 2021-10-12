@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">UTinder</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="uoft_community_app">UofT Community App</string>
+    <string name="uoft_community">UofT Community</string>
+    <string name="background_logo">Background Logo</string>
+    <string name="title_activity_fullscreen2">FullscreenActivity2</string>
+</resources>
