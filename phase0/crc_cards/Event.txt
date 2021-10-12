@@ -1,14 +1,13 @@
-Class name: Course
+Class name: Event
 
-Parent Class: Events
-Subclass: None
+Parent Class: None
+Subclass: Course
 
 Responsibilities:
 * Contains name
-* Contains course code
-* Contains section
 * Contains date
 * Contains time
+
 
 Collaborators:
 * EventManager
