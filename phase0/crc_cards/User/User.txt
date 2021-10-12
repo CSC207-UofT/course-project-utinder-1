@@ -11,3 +11,4 @@ Collaborators:
 * Student
 * Faculty
 * Guest
+* UserManager
