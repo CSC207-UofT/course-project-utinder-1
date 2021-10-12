@@ -1,0 +1,7 @@
+Class name: UserManager
+
+Responsibilities;
+* Store the information about all the users
+
+Collaborators:
+* User

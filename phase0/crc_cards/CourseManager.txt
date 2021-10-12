@@ -1,0 +1,8 @@
+Class name: CourseManager
+
+Responsibilities:
+*
+*
+
+Collaborators:
+* Course
