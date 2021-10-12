@@ -1,0 +1,14 @@
+User(Abstract)
+subclasses: Students, Faculty, Guest
+
+
+Responsibilities:
+* Store nickname
+* Store email
+* Store password
+
+Collaborators:
+* Student
+* Faculty
+* Guest
+* UserManager

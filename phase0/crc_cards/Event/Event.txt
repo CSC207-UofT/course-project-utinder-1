@@ -1,0 +1,13 @@
+Class name: Event
+
+Parent Class: None
+Subclass: Course
+
+Responsibilities:
+* Contains name
+* Contains date
+* Contains time
+
+
+Collaborators:
+* EventManager

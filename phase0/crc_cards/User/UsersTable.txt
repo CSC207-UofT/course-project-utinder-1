@@ -1,0 +1,8 @@
+UsersTable
+
+Responsibilities:
+* Save all the users' information
+
+Collaborators:
+* Users
+* UserManager
