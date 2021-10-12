@@ -1,0 +1,8 @@
+Class name: EventsTable
+
+Responsibilities:
+* Contains all current events
+
+Collaborators:
+* EventManager
+* Event
