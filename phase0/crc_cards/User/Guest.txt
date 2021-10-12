@@ -1,0 +1,11 @@
+Guest
+superclass: User
+
+Responsibilities:
+* Store nickname
+* Store email
+* Store password
+
+Collaborators:
+* User
+* UserManager
