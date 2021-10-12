@@ -8,6 +8,5 @@ Responsibilities:
 * Contains date
 * Contains time
 
-
 Collaborators:
 * EventManager
