@@ -1,7 +1,8 @@
-Class name: User
+Class name: CourseManager
 
 Responsibilities:
 *
+*
 
 Collaborators:
-*
+* Course

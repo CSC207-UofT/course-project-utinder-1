@@ -8,7 +8,7 @@ social assistance for the students at the University of Toronto.
 * After successfully login to the app, the user will see the main page consisting of all the menus they can access to. 
 * In the *Course* menu, the user can find the following features:
   * Uploading their own course schedules and share with other users
-  * Creating/joining a group chat for the course the user is enrolled in
+  * Creating/joining a group chat for the course the user is enrolled in 
   * Managing deadlines for all the upcoming assignments or tests for any courses
 * In the *Community* tab, the user allows to use the following features:
   * Posting about anything they want to share 
