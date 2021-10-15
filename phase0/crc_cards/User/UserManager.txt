@@ -1,9 +1,0 @@
-UserManager
-
-Responsibilities:
-* Create account for user
-* Keep track of the users
-
-Collaborators:
-* User
-* UsersTable
