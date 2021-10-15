@@ -1,8 +1,0 @@
-Class name: FormatConverter
-
-Responsibilities:
-* Convert the input data into the necessary format for other functions
-
-Collaborators:
-* UserManager
-* CourseManager
