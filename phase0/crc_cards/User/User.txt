@@ -1,5 +1,5 @@
 User(Abstract)
-subclasses: Students, Faculty, Guest
+subclasses: Student, Faculty, Guest
 
 
 Responsibilities:
