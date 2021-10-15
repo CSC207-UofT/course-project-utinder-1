@@ -6,8 +6,7 @@ When the User tries to register to the app, the User needs to
 * declare their status: Student, Faculty, or Guest
 
 By receiving the user information, the UserManager will create an account
-for the user and add the newly created User to UsersTable.
+for the user and add the newly created User to UserData.
 
-If they successfully register, then they will be able to see the page
-which says that "Success!". 
+If they successfully register, then they will be directed to a page that says "Success!". 
 
