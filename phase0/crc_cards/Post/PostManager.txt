@@ -1,7 +1,0 @@
-Class name: PostManager
-
-Responsibilities:
-* Store all the posts uploaded in the app
-
-Collaborators:
-* Post
