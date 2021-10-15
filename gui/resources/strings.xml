@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">UTindergui</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="usernamecapital"/>
+    <string name="usercapital">USERNAME</string>
+    <string name="pwcapital">PASSWORD</string>
+    <string name="logincap"/>
+    <string name="logincapi">LOGIN</string>
+    <string name="signin">SIGN IN</string>
+    <string name="sin">Sign in</string>
+    <string name="newacc">or create new account</string>
+    <string name="its_wrong">Its wrong</string>
+    <string name="welcome">Welcome to</string>
+    <string name="utinder">UTinder.</string>
+    <string name="nothing"/>
+    <string name="sibal">Your friendly school life manager</string>
+    <string name="start"/>
+    <string name="startt">Get Started</string>
+</resources>
