@@ -40,4 +40,5 @@ work with the classes such as User, UserManager, and UsersTable for adding this 
 ### Each Member's Contribution
 All the members actively participated in the project. Specifically, 
 Michael, Kex, and Rachel have been working on CRC Cards and Scenario Walk-Through
-and Justin and Ellie have been working on the skeleton program. 
+and Justin and Ellie have been working on the skeleton program. And Aditya participated in suggesting any problems
+that we encountered during the progress, such as the rendering problem in Android studio. 
