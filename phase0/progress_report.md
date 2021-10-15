@@ -14,6 +14,7 @@ Event, Post, and User.
   - The EventsTable is for storing all events for a current week.
   - The Post class and PostManager will create and control any posts created by the user. 
   - The User class and its subclasses will store the users' nickname/username, email address, and password. 
+  - The Users class is for storing all users' information
   - The UserManager and Userdata are used for storing all the Users registered to the app. 
 - The rest of 2 cards are for converting the format of the dataset we're going to use and 
 for displaying Graphic User Interface. 
@@ -31,15 +32,17 @@ work with classes such as User, UserManager, and UserData for adding this newly 
 ### Open Questions
 1. We had a problem of merging our changes to the main branch
 2. We are considering to have several subclasses for User and Event
+3. We had a problem putting the sign in icon onto the emulator
 
 
 ### Huge Success So Far
 1. Our Android Emulator works well (Ellie's M1 macbook issue got solved)
 2. We finally successfully merged our files
-3. We all agree about how clean our code architecture is!
+4. We all agree about how clean our code architecture is!
 
 
 ### Each Member's Contribution
 All the members actively participated in the project. Specifically, 
 Michael, Kex, and Rachel have been working on CRC Cards and Scenario Walk-Through
-and Justin and Ellie have been working on the skeleton program. 
+and Justin and Ellie have been working on the skeleton program. Aaditya have been 
+working on trouble-shooting issues in code and overall review.
