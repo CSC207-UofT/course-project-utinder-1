@@ -1,8 +1,0 @@
-Class name: GUI
-
-Responsibilities:
-* Display all the components that allow the user to access and use
-
-
-Collaborators:
-*
