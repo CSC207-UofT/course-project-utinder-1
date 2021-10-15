@@ -44,4 +44,5 @@ work with classes such as User, UserManager, and UserData for adding this newly 
 ### Each Member's Contribution
 All the members actively participated in the project. Specifically, 
 Michael, Kex, and Rachel have been working on CRC Cards and Scenario Walk-Through
-and Justin and Ellie have been working on the skeleton program. 
+and Justin and Ellie have been working on the skeleton program. Aaditya have been 
+working on trouble-shooting issues in code and overall review.
