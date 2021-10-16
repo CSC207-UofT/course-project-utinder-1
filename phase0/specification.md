@@ -8,11 +8,10 @@ social assistance for the students at the University of Toronto.
 * After a successful login to the app, the user will see the main page consisting of all accessible menus. 
 * In the *Events* menu, the user can find the following features:
   * EventsTable - Where users can upload courses, events and deadlines to create a sharable timetable with other users.
-  * Create/join group chats for enrolled courses
+  * Post any questions they have about the enrolled course
   * Manage deadlines for all upcoming assignments / tests for any courses
 * In the *Community* tab, the user can use the following features:
   * Post about anything they want to share 
     * They can also anonymously post it!
   * Ability to like/dislike posts
   * Leave comments under any post
-  * Join a group chat with classmates who have the similar hobbies / interests!
