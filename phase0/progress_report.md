@@ -38,12 +38,11 @@ for displaying Graphic User Interface.
 
 ### Huge Success So Far
 1. Our Android Emulator works well
-2. The app design and the unittests are great and follow what we epxect to see. 
+2. The app design and the unit tests are great and follow what we epxect to see. 
 4. We all agree about how clean our code architecture is!
 
 
 ### Each Member's Contribution
 All the members actively participated in the project. Specifically, 
-Michael, Kex, and Rachel have been working on CRC Cards and Scenario Walk-Through
-and Justin and Ellie have been working on the skeleton program. Aaditya have been 
+Michael, Kex, and Rachel have been working on CRC Cards and Scenario Walk-Through. And Justin and Ellie have been working on the skeleton program, and Ellie was in charge of the app design while Justin was in charge of implementing classes and unit tests. Aaditya have been 
 working on trouble-shooting issues in code and overall review.
