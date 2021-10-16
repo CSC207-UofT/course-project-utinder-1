@@ -16,7 +16,7 @@ Event, Post, and User.
   - The User class and its subclasses will store the users' nickname/username, email address, and password. 
   - The UserManager class is for creating and keeping track of the Users.
   - The UserData is used for storing all the Users registered to the app. 
-- The rest of 2 cards are for converting the format of the dataset we're going to use and 
+- The rest of 2 cards (i.e. FormatConverter and GUI) are for converting the format of the dataset we're going to use and 
 for displaying Graphic User Interface. 
 
 #### Scenario Walk-Through
