@@ -14,30 +14,31 @@ Event, Post, and User.
   - The EventsTable is for storing all events for a current week.
   - The Post class and PostManager will create and control any posts created by the user. 
   - The User class and its subclasses will store the users' nickname/username, email address, and password. 
-  - The Users class is for storing all users' information
-  - The UserManager and Userdata are used for storing all the Users registered to the app. 
+  - The UserManager class is for creating and keeping track of the Users.
+  - The UserData is used for storing all the Users registered to the app. 
 - The rest of 2 cards are for converting the format of the dataset we're going to use and 
 for displaying Graphic User Interface. 
 
 #### Scenario Walk-Through
 - For the first phase, we chose the situation in which the user tries to register and log in to the app. 
-- In this scenario, after the user inputs their information (i.e. nickname, email, and password), the system will 
-work with classes such as User, UserManager, and UserData for adding this newly created object to the system. 
-- The expected output is a page which says whether they successfully registered/logged in. 
+- In this scenario, after the user inputs their information (i.e. nickname, email, and password), the system will work with User, UserManager, and UserData classes for adding this newly created object to the system. 
+- The expected output is a message of either "Sign in Complete" or "It's wrong". 
 
 #### Skeleton program
-- Based on the CRC card and Scenario Walk-Through, we created several Java Classes and the basic GUI for the Android app. 
+- Based on the CRC card and Scenario Walk-Through, we created several Java Classes and the basic Graphical User Interface (Welcome page and log in page) for the Android app. 
 
 
 ### Open Questions
 1. We had a problem of merging our changes to the main branch
 2. We are considering to have several subclasses for User and Event
 3. We had a problem putting the sign in icon onto the emulator
+4. We are having a problem with uploading the android app to the main branch
+5. We are also discussing what kind of database we should use for convenience. 
 
 
 ### Huge Success So Far
-1. Our Android Emulator works well (Ellie's M1 macbook issue got solved)
-2. We finally successfully merged our files
+1. Our Android Emulator works well
+2. The app design and the unittests are great and follow what we epxect to see. 
 4. We all agree about how clean our code architecture is!
 
 
