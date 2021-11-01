@@ -6,6 +6,7 @@ public class Event {
     private String eventDate; // need to check for the data type for date
     private String eventTime; // need to check for the time format
     // add done feature?
+    // add features about whether event happens weekly???
 
     public Event(String name, String date, String time) {
         this.eventName = name;

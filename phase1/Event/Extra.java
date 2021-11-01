@@ -5,7 +5,12 @@ package com.example.utindergui.event;
    homeworks for the particular course
  */
 public class Extra extends Event{
-    public Extra (String name, String date, String time) {
+    private String courseCode;
+    public Extra (String name, String date, String time, String code) {
         super(name, date, time);
+        this.courseCode = code;
+    }
+    public String getCourseCode() {
+        return this.courseCode;
     }
 }

@@ -1,6 +1,19 @@
 # Design Document
 
+### SOLID
 
-## Specification
+### Clean Architecture
 
-## Progress report
+### Design Patterns
+
+### Use of Github Features
+
+### Code Style and Documentation
+
+### Testing
+
+### Refactoring
+
+### Code Organization
+
+### Functionality

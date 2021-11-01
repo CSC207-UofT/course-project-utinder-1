@@ -8,6 +8,7 @@ public class EventManager {
 
     public EventManager() {
         this.events = new ArrayList<>();
+        this.events.add(new Event("KOVA Meeting", "2021-11-01", "9:00PM"));
     }
 
     /*
@@ -35,7 +36,7 @@ public class EventManager {
 
     public boolean removeEvent(Event old_event) {
         this.events.remove(old_event);
-        return false;
+        return true; // indicate that it is successfully removed
     }
 
 

@@ -8,4 +8,8 @@ public class Exam extends Event{
         this.courseCode = code;
     }
 
+    public String getCourseCode() {
+        return this.courseCode;
+    }
 }
+

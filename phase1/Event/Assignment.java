@@ -7,4 +7,8 @@ public class Assignment extends Event{
         super(name, date, time);
         this.courseCode = code;
     }
+
+    public String getCourseCode() {
+        return this.courseCode;
+    }
 }
