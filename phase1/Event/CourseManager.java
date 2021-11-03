@@ -11,11 +11,10 @@ public class CourseManager {
 
     public CourseManager() {
         this.courses = new ArrayList<>();
-        // Just for now
-        HashMap<String, String[]> time = new HashMap<>();
-        time.put("Tuesday", new String[]{"1:00PM", "2:00PM"});
-        time.put("Thursday", new String[]{"1:00PM", "2:00PM"});
-        this.courses.add(new Course("CSC207", "LEC0101", time));
+        HashMap<String, String[]> sectionTime = new HashMap<>();
+        sectionTime.put("Tuesday", new String[]{"1:00PM", "2:00PM"});
+        sectionTime.put("Thursday", new String[]{"1:00PM", "2:00PM"});
+        this.courses.add(new Course("CSC207F1", "LEC0101", sectionTime));
     }
 
     /*
@@ -64,6 +63,30 @@ public class CourseManager {
         if (index != -1) {
             Course c = this.courses.get(index);
             c.addAssignment(a);
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public boolean addExam(Exam e) {
+        int index = findCourse(e.getCourseCode());
+
+        if (index != -1) {
+            Course c = this.courses.get(index);
+            c.addExam(e);
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public boolean addExtra(Extra e) {
+        int index = findCourse(e.getCourseCode());
+
+        if (index != -1) {
+            Course c = this.courses.get(index);
+            c.addExtra(e);
             return true;
         } else {
             return false;

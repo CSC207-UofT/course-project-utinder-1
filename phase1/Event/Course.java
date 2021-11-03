@@ -12,7 +12,7 @@ import java.util.HashMap;
     This class is for creating either one lecture or tutorial section for one course!
  */
 public class Course {
-    private String courseCode;
+    private String courseCode; // the format should be course code + semester + campus
     private String section;
     // How to store the lecture and tutorial time in an efficient way?
     private HashMap<String, String[]> time; // key: day, value: [startTime, endTime];
@@ -51,8 +51,16 @@ public class Course {
         return this.exam;
     }
 
+    public void addExam(Exam e) {
+        this.exam.add(e);
+    }
+
     public ArrayList<Extra> getExtra() {
         return this.extra;
+    }
+
+    public void addExtra(Extra e) {
+        this.extra.add(e);
     }
 
 }
