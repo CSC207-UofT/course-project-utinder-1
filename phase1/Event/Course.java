@@ -55,7 +55,7 @@ public class Course {
         this.exam.add(e);
     }
 
-    public ArrayList<Extra> getExtra() {
+    public ArrayList<Extra> getAllExtra() {
         return this.extra;
     }
 

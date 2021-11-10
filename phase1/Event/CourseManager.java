@@ -49,11 +49,26 @@ public class CourseManager {
             return false;
             // In the UI, we can display a popup message about the duplicated course!
         }
-
     }
 
-    public boolean removeCourse(Course c) {
-        this.courses.remove(c);
+    // When we remove the course, the corresponding assignments, exams,
+    // and extra homework events should be deleted
+    public boolean removeCourse(String code, String section) {
+        int index = findCourse(code, section);
+        Course c = this.courses.get(index);
+        ArrayList<Event> allTasks = new ArrayList<>();
+        allTasks.addAll(c.getAllAssignments());
+        allTasks.addAll(c.getAllExams());
+        allTasks.addAll(c.getAllExtra());
+        this.courses.remove(this.courses.get(index));
+
+        // Remove all Assignments, Exams, Extras in Event
+        // There should be one specific manager that we're working with
+        EventManager manager = new EventManager();
+        for (int i = 0; i < allTasks.size(); i++) {
+            manager.removeEvent(allTasks.get(i));
+        }
+
         return true;
     }
 

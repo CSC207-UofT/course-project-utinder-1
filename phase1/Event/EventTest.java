@@ -1,5 +1,6 @@
 package com.example.utindergui.event;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.HashMap;
@@ -7,17 +8,25 @@ import java.util.HashMap;
 import static org.junit.Assert.*;
 
 public class EventTest {
-    // Test for the general events
-    EventManager testManager = new EventManager();
-    CourseManager testManager2 = new CourseManager();
+    private EventManager testManager;
+    private CourseManager testManager2;
+    // How to call in Before
+    @Before
+    public void setUp() {
+        testManager = new EventManager();
+        testManager2 = new CourseManager();
+    }
 
+    // Test for the general events
     @Test
     public void EventCreationFail() {
         // When there is a duplicated event, then it returns false!
         String eventName = "KOVA Meeting";
         String eventDate = "2021-11-01";
         String eventTime = "9:00PM";
-        boolean actual_result = testManager.createEvent(eventName, eventDate, eventTime);
+        String eventType1 = "extracurricular";
+        String eventType2 = "";
+        boolean actual_result = testManager.createEvent(eventName, eventDate, eventTime, eventType1, eventType2);
         assertFalse(actual_result);
     }
 
@@ -26,7 +35,9 @@ public class EventTest {
         String eventName = "Meeting with CSC207 Prof";
         String eventDate = "2021-11-04";
         String eventTime = "3:00PM";
-        boolean actual_result = testManager.createEvent(eventName, eventDate, eventTime);
+        String eventType1 = "academic";
+        String eventType2 = "";
+        boolean actual_result = testManager.createEvent(eventName, eventDate, eventTime, eventType1, eventType2);
         assertTrue(actual_result);
     }
 
@@ -49,6 +60,14 @@ public class EventTest {
         time.put("Tuesday", new String[]{"2:00PM", "3:00PM"});
         time.put("Thursday", new String[]{"2:00PM", "3:00PM"});
         boolean actualResult = testManager2.createCourse(code, section, time);
+        assertTrue(actualResult);
+    }
+
+    @Test
+    public void CourseRemovalSuccess() {
+        String code = "CSC207F1";
+        String section = "LEC0101";
+        boolean actualResult = testManager2.removeCourse(code, section);
         assertTrue(actualResult);
     }
 

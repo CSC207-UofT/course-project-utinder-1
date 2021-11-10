@@ -12,4 +12,3 @@ public class Exam extends Event{
         return this.courseCode;
     }
 }
-
