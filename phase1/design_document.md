@@ -1,5 +1,11 @@
 # Design Document
 
+### Specification
+Briefly highlight any additional functionality that you have implemented between phase 0 and the end of phase 1.
+
+### Any major decision made
+A description of any major design decisions your group has made (along with brief explanations of why you made them).
+
 ### SOLID
 How well does your design adhere to the SOLID design principles?
 - Give us specific examples of how your design adheres to the SOLID principles.
@@ -19,6 +25,9 @@ Is your program consistent with Clean Architecture?
 Has your group used design patterns in appropriate places in the code? Identified and described any patterns that could be applied in future with more time?
 - Have you clearly indicated where the pattern was used and possibly pointed out which Pull Request it was implemented in?
 - Be careful that there aren't any obvious places a design pattern should have been applied that your group forgot to mention.
+
+### Packaging Strategies
+A brief description of which packaging strategies you considered, which you decided to use, and why.
 
 ### Use of Github Features
 Did your group make an effort to use some of the various features of GitHub to facilitate development of your code?
@@ -54,3 +63,8 @@ Does your program do what the specification says it should do?
 - Demo your program's functionality to your TA or make a short video!
 - Is the functionality sufficiently ambitious, given the size of your group?
 Can your program store state and load state? I.e. Can the state persist across runs of your program?
+
+### A progress report
+- open questions your group is struggling with
+- what has worked well so far with your design
+- a summary of what each group member has been working on and plans to work on next
