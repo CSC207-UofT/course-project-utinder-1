@@ -22,6 +22,14 @@ public class PostManager {
         post.addComment(comment);
     }
 
+    public void deleteMainPost(MainPost current_post){
+        this.postlist.remove(current_post);
+    }
+
+    public void deleteComment(Post current_post, Comment current_comment){
+        current_post.removeComment(current_comment);
+    }
+
     public void likePost(Post post){
         post.addLike();
     }

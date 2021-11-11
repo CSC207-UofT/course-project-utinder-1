@@ -4,7 +4,7 @@ import com.example.utindergui.User.User;
 import java.util.ArrayList;
 import java.util.List;
 
-abstract class Post {
+public class Post {
     private String text;
     private ArrayList<Comment> comments;
     private int likes;
@@ -23,6 +23,10 @@ abstract class Post {
 
     public void addComment(Comment comment) {
         this.comments.add(comment);
+    }
+
+    public void removeComment(Post current_comment){
+        this.comments.remove(current_comment);
     }
 
     public ArrayList getComments(){
