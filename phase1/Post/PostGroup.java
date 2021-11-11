@@ -19,17 +19,11 @@ public class PostGroup extends PostComponent{
     public String getText() { return text; }
     public int getLikes() { return likes; }
 
-    public void addPost(PostComponent newPostComponent) {
-        postComponents.add(newPostComponent);
-    }
+    public void addPost(PostComponent newPostComponent) { postComponents.add(newPostComponent); }
 
-    public void removePost(PostComponent newPostComponent) {
-        postComponents.remove(newPostComponent);
-    }
+    public void removePost(PostComponent newPostComponent) { postComponents.remove(newPostComponent); }
 
-    public PostComponent getPost(int componentIndex) {
-        return postComponents.get(componentIndex);
-    }
+    public PostComponent getPost(int postIndex) { return postComponents.get(postIndex); }
 
     public void addLike() { likes += 1; }
     public void removeLike() { likes -= 1; }

@@ -18,7 +18,7 @@ public abstract class PostComponent {
         throw new UnsupportedOperationException();
     }
 
-    public PostComponent getPost(int componentIndex) {
+    public PostComponent getPost(int postIndex) {
         throw new UnsupportedOperationException();
     }
 

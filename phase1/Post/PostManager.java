@@ -17,17 +17,13 @@ public class PostManager {
         post.addPost(new Comment(title, text));
     }
 
-    public void removeComment(PostComponent parentPost, PostComponent comment) {
-        parentPost.removePost(comment);
-    }
+    public void removeComment(PostComponent parentPost, PostComponent comment) {parentPost.removePost(comment);}
 
-    public void addLike(PostComponent post) {
-        post.addLike();
-    }
+    public void addLike(PostComponent post) {post.addLike();}
 
-    public void removeLike(PostComponent post) {
-        post.removeLike();
-    }
+    public void removeLike(PostComponent post) {post.removeLike();}
+
+    public PostComponent getPost(int postIndex) {return postList.get(postIndex);}
 
     public void getPostList() {
         for (PostComponent mainPost : postList) {
