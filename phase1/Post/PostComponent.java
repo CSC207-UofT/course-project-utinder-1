@@ -10,6 +10,14 @@ public abstract class PostComponent {
         throw new UnsupportedOperationException();
     }
 
+    public void addLike() {
+        throw new UnsupportedOperationException();
+    }
+
+    public void removeLike() {
+        throw new UnsupportedOperationException();
+    }
+
     public PostComponent getPost(int componentIndex) {
         throw new UnsupportedOperationException();
     }

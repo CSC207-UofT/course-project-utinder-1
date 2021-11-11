@@ -3,17 +3,21 @@ package com.example.utindergui.Post;
 public class PostListGenerator {
 
     public static void main(String[] args) {
-        PostComponent mainPost = new PostGroup("Wonderland whoooo", "Went to wonderland today boys!");
-        PostComponent comment1 = new Comment("mainPost", "Yooo I really wanna go!!");
-        PostComponent comment2 = new Comment("comment1", "Yooo me too!!");
-        PostComponent comment3 = new Comment("mainPost", "Invite me invite me!!");
 
-        mainPost.addPost(comment1);
-        comment1.addPost(comment2);
-        mainPost.addPost(comment3);
+        PostManager lePosts = new PostManager();
 
-        PostManager blah = new PostManager(mainPost);
+        lePosts.addPost("Wonderland whoooo", "Went to wonderland today boys! --- mainPost");
+        lePosts.addComment("mainPost",
+                "Yooo I really wanna go!! --- comment1", lePosts.postList.get(0));
+        lePosts.addComment("comment1",
+                "Yooo me too!! --- comment2", lePosts.postList.get(0).getPost(0));
+        lePosts.addComment("mainPost",
+                "Invite me invite me!! --- comment3", lePosts.postList.get(0));
+        lePosts.addComment("comment2",
+                "Broo we should go next time --- comment4", lePosts.postList.get(0).getPost(0).getPost(0));
+        lePosts.addComment("comment1",
+                "hahaha --- comment5", lePosts.postList.get(0).getPost(0));
 
-        blah.getPostList();
+        lePosts.getPostList();
     }
 }

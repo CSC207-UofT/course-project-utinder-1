@@ -5,10 +5,10 @@ import java.util.Iterator;
 
 public class PostGroup extends PostComponent{
 
-    String title;
-    String text;
-    int likes = 0;
-    ArrayList<PostComponent> postComponents = new ArrayList<>();
+    private String title;
+    private String text;
+    private int likes = 0;
+    private ArrayList<PostComponent> postComponents = new ArrayList<>();
 
     public PostGroup(String postTitle, String postText) {
         title = "\n" + postTitle;
@@ -31,14 +31,14 @@ public class PostGroup extends PostComponent{
         return postComponents.get(componentIndex);
     }
 
+    public void addLike() { likes += 1; }
+    public void removeLike() { likes -= 1; }
+
     public void displayPostInfo() {
 
         System.out.println(getTitle() + "   " + getText() + "   " + getLikes());
 
-        Iterator<PostComponent> postIterator = postComponents.iterator();
-
-        while (postIterator.hasNext()) {
-            PostComponent postInfo = (PostComponent) postIterator.next();
+        for (PostComponent postInfo : postComponents) {
             postInfo.displayPostInfo();
         }
     }
