@@ -27,16 +27,21 @@ public class EventManager {
         return -1;
     }
 
-    // When new Assignment, Exam, and Extra objects are created, then we also
-    // need to automatically update the specific Course => Observer pattern
-    // empty string for type2 if type1 is academic or extracurricular
-    // assignment/exam/extra for type2 if type1 is for the specific Course code
-    public boolean createEvent(String name, String date, String time, String type1, String type2) {
+    /*
+       This method is responsible for creating an Event using the Simple Factory Design Pattern
+     */
+    public boolean createEvent(String name, String date, String time, String location, String type) {
         if (findEvent(name, date, time) == -1) {
             EventFactory factory = new EventFactory();
-            Event newEvent = factory.createEvent(name, date, time, type1, type2);
+            Event newEvent = factory.createEvent(name, date, time, location, type);
             this.events.add(newEvent);
-
+            // How to update it in CourseManager
+//            if (type.equals("assignment") || type.equals("exam") || type.equals("miscellaneous")) {
+//                CourseManager c = new CourseManager();
+//                if (type.equals("assignment")) {
+//                    return c.addAssignment(newEvent);
+//                }
+//            }
             return true;
         } else {
             return false;
