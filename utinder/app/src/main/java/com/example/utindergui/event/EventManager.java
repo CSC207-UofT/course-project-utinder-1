@@ -11,7 +11,7 @@ public class EventManager {
     public EventManager() {
         // We need to make sure event manager connects to the database
         this.events = new ArrayList<>();
-        this.events.add(new Event("KOVA Meeting", "2021-11-01", "9:00PM"));
+        this.events.add(new Event("KOVA Meeting", "2021-11-01", "9:00PM", "BA1201", "extracurricular"));
     }
 
     /*

@@ -73,7 +73,7 @@ public class CourseManager {
     }
 
     public boolean addAssignment(Assignment a) {
-        int index = findCourse(a.getCourseCode());
+        int index = findCourse(a.getEventLocation());
 
         if (index != -1) {
             Course c = this.courses.get(index);
@@ -85,7 +85,7 @@ public class CourseManager {
     }
 
     public boolean addExam(Exam e) {
-        int index = findCourse(e.getCourseCode());
+        int index = findCourse(e.getEventLocation());
 
         if (index != -1) {
             Course c = this.courses.get(index);
@@ -97,7 +97,7 @@ public class CourseManager {
     }
 
     public boolean addExtra(Miscellaneous e) {
-        int index = findCourse(e.getCourseCode());
+        int index = findCourse(e.getEventLocation());
 
         if (index != -1) {
             Course c = this.courses.get(index);

@@ -25,8 +25,8 @@ public class EventTest {
         String eventName = "KOVA Meeting";
         String eventDate = "2021-11-01";
         String eventTime = "9:00PM";
-        String eventLocation = "extracurricular";
-        String eventType = "";
+        String eventLocation = "BA1201";
+        String eventType = "extracurricular";
         boolean actual_result = testManager.createEvent(eventName, eventDate, eventTime, eventLocation, eventType);
         assertFalse(actual_result);
     }
@@ -36,8 +36,8 @@ public class EventTest {
         String eventName = "Meeting with CSC207 Prof";
         String eventDate = "2021-11-04";
         String eventTime = "3:00PM";
-        String eventLocation = "academic";
-        String eventType = "";
+        String eventLocation = "BA2201";
+        String eventType = "academic";
         boolean actual_result = testManager.createEvent(eventName, eventDate, eventTime, eventLocation, eventType);
         assertTrue(actual_result);
     }
