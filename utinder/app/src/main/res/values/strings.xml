@@ -68,4 +68,6 @@
     <string name="code">Course Code *</string>
     <string name="location">Loacation</string>
     <string name="createevent">Create Event</string>
+    <string name="create_event_failed">failed(</string>
+    <string name="create_event_success">success</string>
 </resources>

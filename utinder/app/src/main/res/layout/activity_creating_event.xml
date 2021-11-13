@@ -174,6 +174,24 @@
             android:layout_marginLeft="215dp"
             tools:ignore="LabelFor" android:layout_marginStart="215dp">
     </EditText>
+    <TextView
+            android:text="@string/create_event_failed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/fail_message"
+            android:textSize="12sp" android:textColor="@color/design_default_color_error"
+            android:layout_alignTop="@+id/createingeventbutton" android:layout_marginTop="40dp"
+            android:layout_centerInParent="true"
+            android:visibility="invisible">
+    </TextView>
 
+    <TextView
+            android:text="@string/create_event_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/success_message"
+            android:textSize="12sp" android:textColor="@color/bluee"
+            android:layout_alignTop="@+id/createingeventbutton" android:layout_marginTop="40dp"
+            android:layout_centerInParent="true"
+            android:visibility="invisible">
+    </TextView>
 
 </RelativeLayout>
