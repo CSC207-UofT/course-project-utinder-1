@@ -1,4 +1,4 @@
-package com.example.utindergui;
+package com.example.utindergui.user;
 
 public class UserManager {
     private final UserData data = new UserData();

@@ -1,4 +1,4 @@
-package com.example.utindergui;
+package com.example.utindergui.user;
 
 import java.util.ArrayList;
 

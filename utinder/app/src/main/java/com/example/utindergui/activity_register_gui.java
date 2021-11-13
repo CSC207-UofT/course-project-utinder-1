@@ -10,7 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import com.example.utindergui.user.UserData;
+import com.example.utindergui.user.UserManager;
 
 public class activity_register_gui extends AppCompatActivity {
 

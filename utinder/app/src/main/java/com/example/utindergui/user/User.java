@@ -1,4 +1,4 @@
-package com.example.utindergui;
+package com.example.utindergui.user;
 
 public class User {
     private String nickname;
