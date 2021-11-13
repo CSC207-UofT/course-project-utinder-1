@@ -6,16 +6,17 @@ package com.example.utindergui.event;
 //
 public class Event {
     private String eventName;
-    private String eventDate; // need to check for the data type for date
-    private String eventTime; // need to check for the time format
-    // private String type; // type of the event
-    // add done feature?
-    // add features about whether event happens weekly???
+    private String eventDate;
+    private String eventTime;
+    private String eventLocation; // actual place for GeneralEvent and course code for Assignment/Exam/Miscellaneous
+    private String eventType;
 
-    public Event(String name, String date, String time) {
+    public Event(String name, String date, String time, String location, String type) {
         this.eventName = name;
         this.eventDate = date;
         this.eventTime = time;
+        this.eventLocation = location;
+        this.eventType = type;
     }
 
     public String getEventName() {
@@ -30,7 +31,15 @@ public class Event {
         return this.eventTime;
     }
 
+    public String getEventLocation() { return this.eventLocation; }
+
+    public String getEventType() { return this.eventType; }
+
     // We can use the observer design pattern here
+    public void setEventName(String newName) {
+        this.eventName = newName;
+    }
+
     public void setEventDate(String newDate) {
         this.eventDate = newDate;
         // change in the data
@@ -41,5 +50,12 @@ public class Event {
         // change in the data
     }
 
-    // Interact with the EventManager
+    public void setEventLoation(String newLocation) {
+        this.eventLocation = newLocation;
+    }
+
+    public void setEventType (String newType) {
+        this.eventType = newType;
+    }
+
 }

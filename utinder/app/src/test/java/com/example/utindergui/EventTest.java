@@ -25,9 +25,9 @@ public class EventTest {
         String eventName = "KOVA Meeting";
         String eventDate = "2021-11-01";
         String eventTime = "9:00PM";
-        String eventType1 = "extracurricular";
-        String eventType2 = "";
-        boolean actual_result = testManager.createEvent(eventName, eventDate, eventTime, eventType1, eventType2);
+        String eventLocation = "extracurricular";
+        String eventType = "";
+        boolean actual_result = testManager.createEvent(eventName, eventDate, eventTime, eventLocation, eventType);
         assertFalse(actual_result);
     }
 
@@ -36,9 +36,9 @@ public class EventTest {
         String eventName = "Meeting with CSC207 Prof";
         String eventDate = "2021-11-04";
         String eventTime = "3:00PM";
-        String eventType1 = "academic";
-        String eventType2 = "";
-        boolean actual_result = testManager.createEvent(eventName, eventDate, eventTime, eventType1, eventType2);
+        String eventLocation = "academic";
+        String eventType = "";
+        boolean actual_result = testManager.createEvent(eventName, eventDate, eventTime, eventLocation, eventType);
         assertTrue(actual_result);
     }
 
@@ -119,7 +119,7 @@ public class EventTest {
         String date = "2021-12-01";
         String time = "12:00PM";
         String course = "CSC207F1";
-        boolean actual_result = testManager2.addExtra(new Extra(name, date, time, course));
+        boolean actual_result = testManager2.addExtra(new Miscellaneous(name, date, time, course));
         assertTrue(actual_result);
     }
 
@@ -129,7 +129,7 @@ public class EventTest {
         String date = "2021-12-03";
         String time = "10:00AM";
         String course = "CSC236F1";
-        boolean actual_result = testManager2.addExtra(new Extra(name, date, time, course));
+        boolean actual_result = testManager2.addExtra(new Miscellaneous(name, date, time, course));
         assertFalse(actual_result);
     }
 

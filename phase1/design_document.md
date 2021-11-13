@@ -1,17 +1,22 @@
 # Design Document
 
 ### Specification
-Briefly highlight any additional functionality that you have implemented between phase 0 and the end of phase 1.
+*Briefly highlight any additional functionality that you have implemented between phase 0 and the end of phase 1.*
+
+We had 
 
 ### Any major decision made
 A description of any major design decisions your group has made (along with brief explanations of why you made them).
 
 ### SOLID
-How well does your design adhere to the SOLID design principles?
+*How well does your design adhere to the SOLID design principles?*
 - Give us specific examples of how your design adheres to the SOLID principles.
 - If you found that something in your design wasn't good, tell us about that too!
   - Pretending part of your design is good — when you know it isn't — can potentially hurt your mark significantly!
-  - Acknowledging bad design can earn you marks and demonstrates understanding — especially if you discuss how you could fix it if you had more time!
+  - Acknowledging bad design can earn you marks and demonstrates understanding — especially if you discuss how you could fix it if you had more time!*
+
+
+
 
 ### Clean Architecture
 Is your program consistent with Clean Architecture?
@@ -27,13 +32,19 @@ Has your group used design patterns in appropriate places in the code? Identifie
 - Be careful that there aren't any obvious places a design pattern should have been applied that your group forgot to mention.
 
 ### Packaging Strategies
-A brief description of which packaging strategies you considered, which you decided to use, and why.
+*A brief description of which packaging strategies you considered, which you decided to use, and why.*
+
+We decided to use the 'packaging by layer' strategy since we have distinct pages for each layer. 
+
 
 ### Use of Github Features
-Did your group make an effort to use some of the various features of GitHub to facilitate development of your code?
-- Issues?
-- Actions?
-- Pull Requests?
+*Did your group make an effort to use some of the various features of GitHub to facilitate development of your code?*
+*- Issues?*
+*- Actions?*
+*- Pull Requests?*
+
+We've mostly used Pull Requests as we worked on different branches for each person and then merged later after 
+discussing with other people. 
 
 ### Code Style and Documentation
 Are there any warnings when the code is opened in IntelliJ?

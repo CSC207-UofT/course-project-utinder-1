@@ -18,7 +18,7 @@ public class Course {
     private HashMap<String, String[]> time; // key: day, value: [startTime, endTime];
     private ArrayList<Assignment> assignment;
     private ArrayList<Exam> exam;
-    private ArrayList<Extra> extra; // list of homeworks that are not assignments/exam
+    private ArrayList<Miscellaneous> miscellaneous; // list of homeworks that are not assignments/exam
 
     public Course(String code, String s, HashMap<String, String[]> t) {
         this.courseCode = code;
@@ -26,7 +26,7 @@ public class Course {
         this.time = t;
         this.assignment = new ArrayList<>();
         this.exam = new ArrayList<>();
-        this.extra = new ArrayList<>();
+        this.miscellaneous = new ArrayList<>();
     }
 
     public String getCourseCode() {
@@ -55,12 +55,12 @@ public class Course {
         this.exam.add(e);
     }
 
-    public ArrayList<Extra> getAllExtra() {
-        return this.extra;
+    public ArrayList<Miscellaneous> getAllExtra() {
+        return this.miscellaneous;
     }
 
-    public void addExtra(Extra e) {
-        this.extra.add(e);
+    public void addExtra(Miscellaneous e) {
+        this.miscellaneous.add(e);
     }
 
 }

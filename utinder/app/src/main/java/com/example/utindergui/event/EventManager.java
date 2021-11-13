@@ -34,7 +34,9 @@ public class EventManager {
     public boolean createEvent(String name, String date, String time, String type1, String type2) {
         if (findEvent(name, date, time) == -1) {
             EventFactory factory = new EventFactory();
-            this.events.add(factory.createEvent(name, date, time, type1, type2));
+            Event newEvent = factory.createEvent(name, date, time, type1, type2);
+            this.events.add(newEvent);
+
             return true;
         } else {
             return false;

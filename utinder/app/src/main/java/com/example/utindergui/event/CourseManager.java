@@ -96,7 +96,7 @@ public class CourseManager {
         }
     }
 
-    public boolean addExtra(Extra e) {
+    public boolean addExtra(Miscellaneous e) {
         int index = findCourse(e.getCourseCode());
 
         if (index != -1) {
