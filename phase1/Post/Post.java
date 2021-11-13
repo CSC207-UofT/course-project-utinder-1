@@ -2,37 +2,38 @@ package com.example.utindergui.Post;
 import com.example.utindergui.User.User;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Post {
     private String title;
     private String text;
     private ArrayList<Post> comments; //a sub post can only be a comment.
     private int likes;
-    private User postmaker;
+    private User postMaker;
 
-    public Post(String text, User postmaker, ArrayList photos, String title){//Constructor for a post
+    public Post(String text, User postmaker, String title){//Constructor for a post
         this.title = title;
         this.text = text;
         this.comments = new ArrayList<>();
         this.likes = 0;
-        this.postmaker = postmaker;
+        this.postMaker = postmaker;
     }
 
-    public Post(String text, User postmaker, ArrayList photos){//Constructor for a comment
+    public Post(String text, User postmaker){//Constructor for a comment
         this.title = null;
         this.text = text;
         this.comments = new ArrayList<>();
         this.likes = 0;
-        this.postmaker = postmaker;
+        this.postMaker = postmaker;
     }
 
     public Post getPost(PostManager manager, int postIndex){
         return manager.getPostList().get(postIndex);
     }
 
+    public String getTitle() { return  this.title; }
+
     public String getText(){
-        return this.getText();
+        return this.text;
     }
 
     public void editText(String newText) { this.text = newText;}
@@ -45,12 +46,18 @@ public class Post {
         this.comments.remove(current_comment);
     }
 
-    public ArrayList getComments(){
+    public ArrayList<Post> getComments(){
         return comments;
     }
 
     public void addLike(){
         this.likes += 1;
+    }
+
+    public void removeLike() {
+        if (this.likes > 0) {
+            this.likes -= 1;
+        }
     }
 
     public int getLikes(){

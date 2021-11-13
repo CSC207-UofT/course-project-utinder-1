@@ -9,20 +9,28 @@ public class PostManager {
     private ArrayList<Post> postlist;
 
     public PostManager(){
-        this.postlist = new ArrayList();
+        this.postlist = new ArrayList<>();
     }
 
     public ArrayList<Post> getPostList(){
         return this.postlist;
     }
 
-    public void makePost(String text, User postmaker, ArrayList photos, String title){
-        Post post = new Post(text, postmaker, photos, title);
+    public ArrayList<String> displayTitle() {
+        ArrayList<String> titles = new ArrayList<>();
+        for (Post mainPost : postlist) {
+            titles.add(mainPost.getTitle());
+        }
+        return titles;
+    }
+
+    public void makePost(String text, User postMaker, String title){
+        Post post = new Post(text, postMaker, title);
         this.postlist.add(post);
     }
 
-    public void makeComment(String text, User postmaker, ArrayList photos, Post post){
-        Post comment = new Post(text, postmaker, photos);
+    public void makeComment(String text, User postMaker, Post post){
+        Post comment = new Post(text, postMaker);
         post.addComment(comment);
     }
 
@@ -37,6 +45,8 @@ public class PostManager {
     public void likePost(Post post){
         post.addLike();
     }
+
+    public void unlikePost(Post post) { post.removeLike(); }
 
     public void editPost(Post post, String newText) {
         post.editText(newText);
