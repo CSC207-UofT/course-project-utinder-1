@@ -25,10 +25,10 @@ public class activity_event extends AppCompatActivity {
         AddEventB.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                Intent adding_event_intent = new Intent(activity_event.this, adding_event.class);
+                Intent adding_event_intent = new Intent(activity_event.this, creating_event.class);
                 startActivity(adding_event_intent);
                 finish();
             }
         });
-        };
-    }
+    };
+}

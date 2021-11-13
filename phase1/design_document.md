@@ -3,7 +3,7 @@
 ### Specification
 *Briefly highlight any additional functionality that you have implemented between phase 0 and the end of phase 1.*
 
-We had 
+In phase 0, we've shown 
 
 ### Any major decision made
 A description of any major design decisions your group has made (along with brief explanations of why you made them).
@@ -15,7 +15,7 @@ A description of any major design decisions your group has made (along with brie
   - Pretending part of your design is good — when you know it isn't — can potentially hurt your mark significantly!
   - Acknowledging bad design can earn you marks and demonstrates understanding — especially if you discuss how you could fix it if you had more time!*
 
-
+**Single Responsibility Principle**
 
 
 ### Clean Architecture
@@ -25,6 +25,17 @@ Is your program consistent with Clean Architecture?
 - Are there any clear violations if we were to randomly look at the imports in a few of your files?
 - Is the Dependency Rule consistently followed when interacting with details in the outer layer?
   - Give us a concrete example from something like your UI or an interaction with a database.
+
+**UML Diagram**
+
+**Scenario Walk-Through (demonstrating Clean Architecture)**
+
+**Violations**
+
+**Dependency Rules**
+
+ex. MainActivity -> UserManager
+
 
 ### Design Patterns
 Has your group used design patterns in appropriate places in the code? Identified and described any patterns that could be applied in future with more time?

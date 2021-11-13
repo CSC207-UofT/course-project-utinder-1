@@ -10,19 +10,17 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.UTindergui">
         <activity
-                android:name=".Welcomescreen"
+                android:name=".creating_event"
                 android:exported="true"
                 android:theme="@style/Theme.Design.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
 
-<!--             <intent-filter>-->
-<!--             <action android:name="android.intent.action.MAIN"/>-->
-
-
-<!--             <category android:name="android.intent.category.LAUNCHER"/>-->
-<!--             </intent-filter>-->
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
         <activity
-                android:name=".MainActivity"
+                android:name=".activity_event"
                 android:exported="true"
                 android:theme="@style/Theme.Design.NoActionBar">
 
@@ -32,6 +30,19 @@
 
             <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
             <!-- </intent-filter> -->
+        </activity>
+        <activity
+                android:name=".me_page"
+                android:exported="true"
+                android:theme="@style/Theme.Design.NoActionBar">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN"/> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
+            <!-- </intent-filter> -->
+
         </activity>
         <activity
                 android:name=".activity_register_gui"
@@ -66,26 +77,6 @@
 
         </activity>
         <activity
-                android:name=".adding_event"
-                android:exported="true"
-                android:theme="@style/Theme.Design.NoActionBar">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN"/>-->
-
-<!--                <category android:name="android.intent.category.LAUNCHER"/>-->
-<!--            </intent-filter>-->
-        </activity>
-        <activity
-                android:name=".activity_event"
-                android:exported="true"
-                android:theme="@style/Theme.Design.NoActionBar">
-                        <intent-filter>
-                            <action android:name="android.intent.action.MAIN"/>
-
-                            <category android:name="android.intent.category.LAUNCHER"/>
-                        </intent-filter>
-        </activity>
-        <activity
                 android:name=".community"
                 android:exported="true"
                 android:theme="@style/Theme.Design.NoActionBar">
@@ -110,7 +101,7 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-                android:name=".me_page"
+                android:name=".MainActivity"
                 android:exported="true"
                 android:theme="@style/Theme.Design.NoActionBar">
 
@@ -120,7 +111,18 @@
 
             <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
             <!-- </intent-filter> -->
+        </activity>
+        <activity
+                android:name=".Welcomescreen"
+                android:exported="true"
+                android:theme="@style/Theme.Design.NoActionBar">
 
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN"/> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
+            <!-- </intent-filter> -->
         </activity>
 
         <meta-data

@@ -60,4 +60,12 @@
     <string name="user">user</string>
     <string name="follower">Followers</string>
     <string name="addingevent">Create Event</string>
+    <string name="eventname">Name of Event *</string>
+    <string name="description">Description *</string>
+    <string name="eventdate">Date *</string>
+    <string name="eventtime">Time *</string>
+    <string name="category">Category *</string>
+    <string name="code">Course Code *</string>
+    <string name="location">Loacation</string>
+    <string name="createevent">Create Event</string>
 </resources>

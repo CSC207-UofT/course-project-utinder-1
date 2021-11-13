@@ -9,9 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
-import com.example.utindergui.user.UserData;
 import com.example.utindergui.user.UserManager;
+import com.example.utindergui.user.UserData;
+
 
 public class activity_register_gui extends AppCompatActivity {
 
