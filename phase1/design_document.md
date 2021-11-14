@@ -128,12 +128,12 @@ Can your program store state and load state? I.e. Can the state persist across r
 ### A progress report
 #### Open Questions of Struggle
 *open questions your group is struggling with*
-- We are now questioning whether ...
+- We are now questioning whether Posts should contain pictures as our database has a 5 GB limit on storage. Therefore, including pictures might take up too much space.
 
 #### Success
 *what has worked well so far with your design*
 - We have been able to push the android app to the main branch
-- 
+- The recursive structure for Posts seem to work fine with all the testing so far.
 
 #### Summary of each member's contribution
 *a summary of what each group member has been working on and plans to work on next*
@@ -142,7 +142,7 @@ Can your program store state and load state? I.e. Can the state persist across r
 | ------------- | ------------- |
 | Justin Cha | Content Cell  |
 | Aaditya Mendel  | Content Cell  |
-| Michael Rubenstein  | Content Cell  |
+| Michael Rubenstein  | Designed the structure and collaborated on the implementation for Post and Post related classes with Kex. Cleaned up structure, and fixed potential errors for Post. Added unit testing for Post to find bugs and see if it behaves according to our design.|
 | Kex Zhang  | Content Cell  |
 | Ellie Kang  | Designed gui for each required screen (registration view, registration success view, homepage view, calendar view (rachel helped me a lot), event view, creating event view and me view); modified Java class for the functionality of the screen component.  |
 | Rachel Seong  | Implemented the Event-related classes; made an interaction between Java class for UI to the Event classes; plan to add the functionality for each different User with its Event data |
