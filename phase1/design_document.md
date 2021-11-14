@@ -29,6 +29,16 @@ A description of any major design decisions your group has made (along with brie
 
 There was an active discussion regarding the design 
 
+Post Changes:
+At first, we were following the composite design patter and implemented an abstract class called Post for giving the
+structure to posts, then a class called MainPost that extended from it, and another class called Comment.
+The idea was that MainPost and Comment were essentially the same, but you are unable to add a title for Comment and
+are only able to reply to MainPosts / Comments with Comment. However, after discussing the code structure with
+teammates we realized that since we are able to comment under comments, it didn't make sense to implement the
+composite design pattern for this case as we don't have a leaf case. We realized that it would be much easier to read
+and be less cluttered if we had only one class for all posts, then have an overloaded constructor to determine which
+post contains a title and which post doesn't. This made the code much simpler and easier to understand.
+
 ### SOLID
 How well does your design adhere to the SOLID design principles?
 - Give us specific examples of how your design adheres to the SOLID principles.
