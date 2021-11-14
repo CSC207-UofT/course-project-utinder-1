@@ -1,13 +1,33 @@
 # Design Document
 
 ### Specification
-Briefly highlight any additional functionality that you have implemented between phase 0 and the end of phase 1.
+*Briefly highlight any additional functionality that you have implemented between phase 0 and the end of phase 1.*
 
-In phase 0, we've shown what happens when the User creates a new account which will be managed by UserManager, then UserManager checks the account and gives the message whether the User successfully signed in or not. 
-For phase 1, we've decided to put more functionality, such as how the User can interact in the Homepage, checks their schedules in the Event page, have their own page. Furthermore, we've added functionality for adding a new post on the Community feature. 
+From the phase 0, we had the specification as following:
+> From this project, we would like to create an Android app that provides both academic and social assistance 
+> for the students at the University of Toronto.
+> * When we start to run the project/app, the Welcome page will be shown, and after 3 seconds, we can see the Sign-In page.
+> * The user needs to use their corresponding UT email, their username and password for authentication.
+> * After a successful login to the app, the user will be able to see the main page consisting of all accessible menus.
+> * In the *Events* menu, the user can find the following features:
+>  * EventsTable - Where users can upload courses, events and deadlines to create a sharable timetable with other users
+>  * Post any questions about the enrolled courses
+>  * Manage deadlines for all upcoming assignments / tests for any courses
+> * In the *Community* tab, the user can use the following features:
+>  * Post about anything they want to share
+>    * They can also anonymously post it!
+>  * Ability to like/dislike posts
+>  * Leave comments under any post
+
+For phase 1, we decided to modify and extend the following things:
+- The User can "unlike" posts, not "dislike" posts. 
+- In the *Event* menu, the User can see the calendar with the dots indicating the events on the specific date. 
+- In the homepage, they can check the list of tasks they need to complete.
 
 ### Any major decision made
 A description of any major design decisions your group has made (along with brief explanations of why you made them).
+
+There was an active discussion regarding the design 
 
 ### SOLID
 How well does your design adhere to the SOLID design principles?
@@ -49,13 +69,18 @@ A brief description of which packaging strategies you considered, which you deci
 We decided to use the 'packaging by layer' strategy since we have distinct pages for each layer. 
 
 ### Use of Github Features
-Did your group make an effort to use some of the various features of GitHub to facilitate development of your code?
-- Issues?
-- Actions?
-- Pull Requests?
+*Did your group make an effort to use some of the various features of GitHub to facilitate development of your code?*
+
+*- Issues?*
+
+*- Actions?*
+
+*- Pull Requests?*
 
 We've mostly used Pull Requests as we worked on different branches for each person and then merged later after 
-discussing with other people. 
+discussing with other people. Besides Pull Request, we had a chance to use the direct "Resolve Conflicts" 
+feature in Gitub via web editor. This tool helped to see in which area there was a conflict between the local 
+branch files and the main branch files.
 
 
 ### Code Style and Documentation
@@ -78,8 +103,11 @@ Is there evidence that your team has refactored code in a meaningful way during 
 Are there any obvious code smells still in your code that you missed fixing?
 
 ### Code Organization
-Is your code organized in a meaningful way? Is it easy to find things in your package structure?
-- Tell us about how you decided to organize your code and why!
+*Is your code organized in a meaningful way? Is it easy to find things in your package structure?*
+
+*- Tell us about how you decided to organize your code and why!*
+
+We used the package by layer in which we categorized each file in terms of what feature they work for since it is easier to understand any different cases (User, Event, Post).
 
 ### Functionality
 Does your program do what the specification says it should do?
@@ -88,6 +116,24 @@ Does your program do what the specification says it should do?
 Can your program store state and load state? I.e. Can the state persist across runs of your program?
 
 ### A progress report
-- open questions your group is struggling with
-- what has worked well so far with your design
-- a summary of what each group member has been working on and plans to work on next
+#### Open Questions of Struggle
+*open questions your group is struggling with*
+- We are now questioning whether ...
+
+#### Success
+*what has worked well so far with your design*
+- We have been able to push the android app to the main branch
+- 
+
+#### Summary of each member's contribution
+*a summary of what each group member has been working on and plans to work on next*
+
+| Member  | Description |
+| ------------- | ------------- |
+| Justin Cha | Content Cell  |
+| Aaditya Mendel  | Content Cell  |
+| Michael Rubenstein  | Content Cell  |
+| Kex Zhang  | Content Cell  |
+| Ellie Kang  | Content Cell  |
+| Rachel Seong  | Implemented the Event-related classes; made an interaction between Java class for UI to the Event classes; plan to add the functionality for each different User with its Event data |
+
