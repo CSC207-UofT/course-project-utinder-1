@@ -25,7 +25,7 @@ public class creating_event extends AppCompatActivity {
         final EditText courseCode = findViewById(R.id.puttingcoursecode);
         final Button BackToEventView = findViewById(R.id.createingeventbutton);
         final TextView failed = findViewById(R.id.fail_message);
-        final TextView success = findViewById(R.id.success_message);
+
         BackToEventView.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("SetTextI18n")
             @Override
@@ -38,30 +38,32 @@ public class creating_event extends AppCompatActivity {
                 String location = eventLocation.getText().toString();
                 String code = courseCode.getText().toString();
 
-                // Maybe this violates the Clean Architecture
+                // Call the Database and add the new data
+
+                // Call EventDataConverter and its addEvent() method
+
+
                 EventManager manager = new EventManager();
                 if (code.equals("")) {
                     boolean result = manager.createEvent(name, date, time, location, type);
-                    // indicate that a new event is created!
-                    // We can show the red dot on the right date!
                     if (result) {
-                        success.setVisibility(View.VISIBLE);
+                        Intent back_to_event = new Intent(creating_event.this, activity_event.class);
+                        startActivity(back_to_event);
+                        finish();
                     } else {
                         failed.setVisibility(View.VISIBLE);
                     }
                 } else {
                     boolean result = manager.createEvent(name, date, time, code, type);
-                    // indicate that a new event is created!
                     if (result) {
-                        success.setVisibility(View.VISIBLE);
+                        Intent back_to_event = new Intent(creating_event.this, activity_event.class);
+                        startActivity(back_to_event);
+                        finish();
                     } else {
                         failed.setVisibility(View.VISIBLE);
                     }
                 }
 
-                Intent back_to_event = new Intent(creating_event.this, activity_event.class);
-                startActivity(back_to_event);
-                finish();
             }
         });
     }

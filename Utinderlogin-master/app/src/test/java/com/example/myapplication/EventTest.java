@@ -1,12 +1,13 @@
-package com.example.utindergui;
+package com.example.myapplication;
 
-import com.example.utindergui.event.*;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.HashMap;
 
-import static org.junit.Assert.*;
+import com.example.myapplication.event.*;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class EventTest {
     private EventManager testManager;

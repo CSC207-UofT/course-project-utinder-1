@@ -1,4 +1,4 @@
-package com.example.utindergui.event;
+package com.example.myapplication.event;
 
 public class EventFactory {
     public Event createEvent(String name, String date, String time, String location, String type) {
