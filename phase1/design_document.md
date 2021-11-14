@@ -134,6 +134,6 @@ Can your program store state and load state? I.e. Can the state persist across r
 | Aaditya Mendel  | Content Cell  |
 | Michael Rubenstein  | Content Cell  |
 | Kex Zhang  | Content Cell  |
-| Ellie Kang  | Content Cell  |
+| Ellie Kang  | Designed gui for each required screen (registration view, registration success view, homepage view, calendar view (rachel helped me a lot), event view, creating event view and me view); modified Java class for the functionality of the screen component.  |
 | Rachel Seong  | Implemented the Event-related classes; made an interaction between Java class for UI to the Event classes; plan to add the functionality for each different User with its Event data |
 
