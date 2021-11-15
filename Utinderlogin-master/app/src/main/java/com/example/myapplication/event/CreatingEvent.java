@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.event;
 
 import android.util.Log;
 import androidx.annotation.NonNull;
@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.myapplication.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -31,15 +32,15 @@ public class CreatingEvent extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_creating_event);
+        setContentView(com.example.myapplication.R.layout.activity_creating_event);
 
-        final EditText eventName = findViewById(R.id.puttingevent);
-        final EditText eventDate = findViewById(R.id.puttingdate);
-        final EditText eventTime = findViewById(R.id.puttingtime);
-        final EditText eventType = findViewById(R.id.categorizing);
-        final EditText eventLocation = findViewById(R.id.puttinglocation);
-        final EditText courseCode = findViewById(R.id.puttingcoursecode);
-        final Button BackToEventView = findViewById(R.id.createingeventbutton);
+        final EditText eventName = findViewById(com.example.myapplication.R.id.puttingevent);
+        final EditText eventDate = findViewById(com.example.myapplication.R.id.puttingdate);
+        final EditText eventTime = findViewById(com.example.myapplication.R.id.puttingtime);
+        final EditText eventType = findViewById(com.example.myapplication.R.id.categorizing);
+        final EditText eventLocation = findViewById(com.example.myapplication.R.id.puttinglocation);
+        final EditText courseCode = findViewById(com.example.myapplication.R.id.puttingcoursecode);
+        final Button BackToEventView = findViewById(com.example.myapplication.R.id.createingeventbutton);
         final TextView failed = findViewById(R.id.fail_message);
 
         BackToEventView.setOnClickListener(new View.OnClickListener() {

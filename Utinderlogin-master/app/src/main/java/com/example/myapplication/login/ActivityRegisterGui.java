@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.login;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -8,8 +8,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.myapplication.user.UserManager;
-import com.example.myapplication.user.UserData;
+import com.example.myapplication.R;
+import com.example.myapplication.login.user.UserManager;
+import com.example.myapplication.login.user.UserData;
 
 
 public class ActivityRegisterGui extends AppCompatActivity {

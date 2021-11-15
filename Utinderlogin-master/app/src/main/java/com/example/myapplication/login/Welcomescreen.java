@@ -1,8 +1,9 @@
-package com.example.myapplication;
+package com.example.myapplication.login;
 
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
+import com.example.myapplication.R;
 
 import java.util.Timer;
 import java.util.TimerTask;

@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.event;
 
 import com.example.myapplication.event.EventManager;
 

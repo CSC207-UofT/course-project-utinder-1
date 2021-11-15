@@ -1,6 +1,6 @@
-package com.example.myapplication.posting;
+package com.example.myapplication.community;
 
-import com.example.myapplication.user.User;
+import com.example.myapplication.login.user.User;
 
 import java.util.ArrayList;
 

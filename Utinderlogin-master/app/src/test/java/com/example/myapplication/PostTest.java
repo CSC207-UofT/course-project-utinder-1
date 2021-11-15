@@ -1,11 +1,9 @@
 package com.example.myapplication;
 
-import com.example.myapplication.user.User;
-import com.example.myapplication.posting.*;
+import com.example.myapplication.login.user.User;
+import com.example.myapplication.community.*;
 import org.junit.Before;
 import org.junit.Test;
-
-import java.util.Objects;
 
 public class PostTest {
     private PostManager testManager;

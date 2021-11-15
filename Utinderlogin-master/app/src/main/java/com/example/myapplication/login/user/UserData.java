@@ -1,4 +1,4 @@
-package com.example.myapplication.user;
+package com.example.myapplication.login.user;
 
 import java.util.ArrayList;
 

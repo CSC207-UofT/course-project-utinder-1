@@ -1,6 +1,8 @@
-package com.example.myapplication;
+package com.example.myapplication.login;
 
-import com.example.myapplication.user.UserManager;
+import com.example.myapplication.homepage.Homepage;
+import com.example.myapplication.R;
+import com.example.myapplication.login.user.UserManager;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
