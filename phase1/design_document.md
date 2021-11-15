@@ -162,8 +162,8 @@ showing the events in the Calendar. It is also able to create and add an event i
 
 | Member  | Description |
 | ------------- | ------------- |
-| Justin Cha | Content Cell  |
-| Aaditya Mendel  | Content Cell  |
+| Justin Cha | Worked on the back end part of our app. Created and set up the database for the app. Created a server and connected it to the app and created cloud storage with aaditya. Helped out with couple programming parts of other members.  |
+| Aaditya Mendel  | Helped out with the back end part with Justin. Created cloud storage for the app on the server with Justin. Also gave ideas and helped out with couple gui parts. Also made the pomodoro page (study timer) |
 | Michael Rubenstein  | Designed the structure and collaborated on the implementation for Post and Post related classes with Kex. Cleaned up structure, and fixed potential errors for Post. Added unit testing for Post to find bugs and see if it behaves according to our design.|
 | Kex Zhang  | Content Cell  |
 | Ellie Kang  | Designed gui for each required screen (registration view, registration success view, homepage view, calendar view (rachel helped me a lot), event view, creating event view and me view); modified Java class for the functionality of the screen component.  |
