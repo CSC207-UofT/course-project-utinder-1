@@ -10,7 +10,7 @@ public class EventManager {
 
     public EventManager() {
         this.events = new ArrayList<>();
-
+        this.events.add(new ExtracurricularEvent("KOVA Meeting", "2021-11-01", "9:00PM", "BA1201"));
         // we need to set the data in events
     }
 
