@@ -2,8 +2,6 @@ package com.example.myapplication.event;
 
 import java.util.ArrayList;
 
-// Use Observer design pattern?
-
 public class EventManager {
 
     private ArrayList<Event> events;
@@ -35,13 +33,8 @@ public class EventManager {
             EventFactory factory = new EventFactory();
             Event newEvent = factory.createEvent(name, date, time, location, type);
             this.events.add(newEvent);
-            // How to update it in CourseManager
-//            if (type.equals("assignment") || type.equals("exam") || type.equals("miscellaneous")) {
-//                CourseManager c = new CourseManager();
-//                if (type.equals("assignment")) {
-//                    return c.addAssignment(newEvent);
-//                }
-//            }
+            // Update it in CourseManager
+
             return true;
         } else {
             return false;

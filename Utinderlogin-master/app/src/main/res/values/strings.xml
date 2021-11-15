@@ -61,13 +61,17 @@
     <string name="follower">Followers</string>
     <string name="addingevent">Create Event</string>
     <string name="eventname">Name of Event *</string>
-    <string name="description">Description *</string>
+    <string name="description">Description</string>
     <string name="eventdate">Date *</string>
     <string name="eventtime">Time *</string>
     <string name="category">Category *</string>
-    <string name="code">Course Code *</string>
+    <string name="code">Course Code</string>
     <string name="location">Loacation</string>
     <string name="createevent">Create Event</string>
     <string name="create_event_failed">failed(</string>
     <string name="create_event_success">success</string>
+    <string name="date">(YYYY-MM-DD)</string>
+    <string name="yourcalendar">Your Calendar</string>
+
+
 </resources>
