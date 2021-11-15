@@ -6,12 +6,12 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Homepage extends AppCompatActivity {
+public class Community extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_homepage);
+        setContentView(R.layout.activity_community);
 
         final Button homebutton = findViewById(R.id.homebutton);
         final Button eventbutton = findViewById(R.id.eventbutton);
@@ -20,7 +20,7 @@ public class Homepage extends AppCompatActivity {
         homebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent homebutton_intent = new Intent(Homepage.this, Homepage.class);
+                Intent homebutton_intent = new Intent(Community.this, Homepage.class);
                 startActivity(homebutton_intent);
                 finish();
             }
@@ -28,7 +28,7 @@ public class Homepage extends AppCompatActivity {
         eventbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent eventbutton_intent = new Intent(Homepage.this, ActivityEvent.class);
+                Intent eventbutton_intent = new Intent(Community.this, ActivityEvent.class);
                 startActivity(eventbutton_intent);
                 finish();
             }
@@ -36,7 +36,7 @@ public class Homepage extends AppCompatActivity {
         communitybutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent communitybutton_intent = new Intent(Homepage.this, Community.class);
+                Intent communitybutton_intent = new Intent(Community.this, Community.class);
                 startActivity(communitybutton_intent);
                 finish();
             }
@@ -44,7 +44,7 @@ public class Homepage extends AppCompatActivity {
         mebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent mebutton_intent = new Intent(Homepage.this, MePage.class);
+                Intent mebutton_intent = new Intent(Community.this, MePage.class);
                 startActivity(mebutton_intent);
                 finish();
             }

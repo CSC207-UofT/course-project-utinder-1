@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 
-public class activity_after_login extends AppCompatActivity {
+public class ActivityAfterLogin extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,7 @@ public class activity_after_login extends AppCompatActivity {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
-                Intent back_to_login_intent = new Intent(activity_after_login.this, MainActivity.class);
+                Intent back_to_login_intent = new Intent(ActivityAfterLogin.this, MainActivity.class);
                 startActivity(back_to_login_intent);
                 finish();
             }

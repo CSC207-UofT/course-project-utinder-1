@@ -9,120 +9,67 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/Theme.UTindergui">
+
         <activity
-                android:name=".creating_event"
-                android:exported="true"
-                android:theme="@style/Theme.Design.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
-        <activity
-                android:name=".activity_event"
-                android:exported="true"
-                android:theme="@style/Theme.Design.NoActionBar">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN"/> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
-            <!-- </intent-filter> -->
-        </activity>
-        <activity
-                android:name=".me_page"
-                android:exported="true"
-                android:theme="@style/Theme.Design.NoActionBar">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN"/> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
-            <!-- </intent-filter> -->
-
-        </activity>
-        <activity
-                android:name=".activity_register_gui"
+                android:name=".CreatingEvent"
                 android:exported="true"
                 android:theme="@style/Theme.Design.NoActionBar">
         </activity>
         <activity
-                android:name=".activity_after_login"
+                android:name=".ActivityEvent"
+                android:exported="true"
+                android:theme="@style/Theme.Design.NoActionBar">
+        </activity>
+        <activity
+                android:name=".MePage"
+                android:exported="true"
+                android:theme="@style/Theme.Design.NoActionBar">
+        </activity>
+        <activity
+                android:name=".ActivityRegisterGui"
+                android:exported="true"
+                android:theme="@style/Theme.Design.NoActionBar">
+        </activity>
+        <activity
+                android:name=".ActivityAfterLogin"
                 android:exported="true"
                 android:parentActivityName=".MainActivity"
                 android:theme="@style/Theme.Design.NoActionBar">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN"/> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
-            <!-- </intent-filter> -->
-
         </activity>
         <activity
                 android:name=".Homepage"
                 android:exported="true"
                 android:theme="@style/Theme.Design.NoActionBar">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN"/> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
-            <!-- </intent-filter> -->
-
         </activity>
         <activity
-                android:name=".community"
+                android:name=".Community"
                 android:exported="true"
                 android:theme="@style/Theme.Design.NoActionBar">
 
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN"/> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
-            <!-- </intent-filter> -->
         </activity>
         <activity
-                android:name=".post"
+                android:name=".Post"
                 android:exported="true"
                 android:theme="@style/Theme.Design.NoActionBar">
 
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN"/> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
-            <!-- </intent-filter> -->
         </activity>
         <activity
                 android:name=".MainActivity"
                 android:exported="true"
                 android:theme="@style/Theme.Design.NoActionBar">
 
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN"/> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
-            <!-- </intent-filter> -->
         </activity>
         <activity
                 android:name=".Welcomescreen"
                 android:exported="true"
                 android:theme="@style/Theme.Design.NoActionBar">
 
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN"/> -->
+             <intent-filter>
+             <action android:name="android.intent.action.MAIN"/>
 
 
-            <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
-            <!-- </intent-filter> -->
+             <category android:name="android.intent.category.LAUNCHER"/>
+             </intent-filter>
         </activity>
 
         <meta-data

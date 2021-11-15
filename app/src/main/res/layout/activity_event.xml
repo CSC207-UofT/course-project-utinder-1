@@ -1,73 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".activity_event" android:background="#B1D4E0">
+        tools:context=".ActivityEvent" android:background="@color/white">
 
-    <EditText
-            android:layout_width="300dp"
-            android:layout_height="90dp"
-            android:inputType="text" android:text="Your Calendar"
-            android:fontFamily="@font/catamaran_semibold" android:textSize="34sp"
-            android:gravity="start|top"
-            android:padding="20dp"
-            android:ems="10"
-            android:id="@+id/editTextTextMultiLine" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="50dp" android:layout_marginRight="20dp" android:layout_marginEnd="20dp"
-            android:textColor="@color/uoftcoloourr" android:textColorHint="@color/uoftcoloourr"/>
+    <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/yourcalendar" android:id="@+id/yourcalendar"
+            android:fontFamily="@font/catamaran_semibold" android:textSize="32sp"
+            android:textColor="@color/uoftcoloourr" android:textColorHint="@color/uoftcoloourr"
+            android:layout_marginLeft="45dp" android:layout_marginTop="35dp">
+    </TextView>
+
+    <View
+            android:layout_width="350dp" android:layout_height="1dp"
+            android:background="@color/greyy" android:id="@+id/horizontalline"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@+id/yourcalendar" android:layout_marginBottom="-10dp"
+            android:layout_centerInParent="true">
+    </View>
+
     <CalendarView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
             android:firstDayOfWeek="1" android:selectedDateVerticalBar="@color/uoftcoloourr"
-            android:id="@+id/calendarView" app:layout_constraintHorizontal_bias="0.491"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
-            app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView" android:layout_marginBottom="70dp"/>
+            android:id="@+id/Calendar_in_eventview" android:layout_centerInParent="true"
+            android:layout_marginBottom="70dp"
+            android:theme="@style/calendarview" android:background="@color/darkgrey"
+            android:dateTextAppearance="@style/CalenderViewDateCustomText"
+            android:weekDayTextAppearance="@style/CalenderViewWeekCustomText">
+    </CalendarView>
+
     <Button
-            android:layout_width="102dp" android:layout_height="42dp"
-            android:width="300dp"
-            android:height="60dp"
-            android:text="Add event" android:textSize="12sp"
+            android:layout_width="85dp" android:layout_height="42dp"
+            android:width="300dp" android:height="60dp"
+            android:text="Add event" android:textSize="10sp"
             android:textColor="@color/uoftcoloourr" android:textColorHint="@color/uoftcoloourr"
             app:backgroundTint="@color/greyy"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
-            android:layout_marginEnd="52dp" android:layout_marginRight="52dp"
-            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/addingbutton"/>
+            android:id="@+id/addingbutton" android:layout_alignTop="@id/Calendar_in_eventview"
+            android:layout_marginTop="-50dp" android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp" />
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:layout_width="420dp"
-            android:layout_height="100dp"
-            app:backgroundTint="#B1D4E0" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="-20dp" android:id="@+id/bottomNavigationView">
+            android:layout_width="420dp" android:layout_height="100dp"
+            app:backgroundTint="@color/white" android:layout_alignParentBottom="true"
+            android:id="@+id/bottomNavigationView" android:layout_marginBottom="-20dp">
         <Button
                 android:text="@string/nothing"
                 android:layout_width="50dp"
                 android:layout_height="60dp" android:id="@+id/homebutton"
                 android:layout_marginLeft="30dp" android:layout_marginStart="50dp" android:layout_marginBottom="20dp"
-                app:backgroundTint="@color/white"/>
+                app:backgroundTint="@color/greyy"/>
         <Button
                 android:text="@string/nothing"
                 android:layout_width="50dp"
                 android:layout_height="60dp" android:id="@+id/eventbutton"
                 android:layout_marginLeft="30dp" android:layout_marginStart="140dp" android:layout_marginBottom="20dp"
-                app:backgroundTint="@color/white"/>
+                app:backgroundTint="@color/uoftcoloourr"/>
         <Button
                 android:text="@string/nothing"
                 android:layout_width="50dp"
                 android:layout_height="60dp" android:id="@+id/communitybutton"
                 android:layout_marginLeft="30dp" android:layout_marginStart="230dp" android:layout_marginBottom="20dp"
-                app:backgroundTint="@color/uoftcoloourr"/>
+                app:backgroundTint="@color/greyy"/>
         <Button
                 android:text="@string/nothing"
                 android:layout_width="50dp"
                 android:layout_height="60dp" android:id="@+id/mebutton"
                 android:layout_marginLeft="30dp" android:layout_marginStart="320dp" android:layout_marginBottom="20dp"
-                app:backgroundTint="@color/white"/>
+                app:backgroundTint="@color/greyy"/>
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

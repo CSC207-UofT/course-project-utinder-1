@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 
-public class activity_register_gui extends AppCompatActivity {
+public class ActivityRegisterGui extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +35,7 @@ public class activity_register_gui extends AppCompatActivity {
                 if (!data.findUsername(name) && !data.findEmail(email)) {
                     boolean temp = usermanager.createUser(name, email, password);
                     if (temp) {
-                        Intent successfully_registered = new Intent(activity_register_gui.this, activity_after_login.class);
+                        Intent successfully_registered = new Intent(ActivityRegisterGui.this, ActivityAfterLogin.class);
                         startActivity(successfully_registered);
                         finish();
                     } else {
