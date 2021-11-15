@@ -1,4 +1,4 @@
-package com.example.utindergui.event;
+package com.example.myapplication.event;
 
 import java.util.ArrayList;
 import java.util.HashMap;

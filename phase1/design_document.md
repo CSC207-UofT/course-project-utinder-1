@@ -7,6 +7,7 @@ From the phase 0, we had the specification as following:
 
 From this project, we would like to create an Android app that provides both academic and social assistance
 for the students at the University of Toronto.
+
   * When we start to run the project/app, the Welcome page will be shown, and after 3 seconds, we can see the Sign-In page.
   * The user needs to use their corresponding UT email, their username and password for authentication.
   * After a successful login to the app, the user will be able to see the main page consisting of all accessible menus.
