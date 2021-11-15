@@ -30,6 +30,9 @@ public class CourseManager {
         return -1;
     }
 
+    /*
+      Overloading method of findCourse()
+     */
     public int findCourse(String code) {
         for (int j = 0; j < this.courses.size(); j++) {
             Course c = this.courses.get(j);
@@ -47,7 +50,6 @@ public class CourseManager {
             return true;
         } else {
             return false;
-            // In the UI, we can display a popup message about the duplicated course!
         }
     }
 
@@ -72,6 +74,9 @@ public class CourseManager {
         return true;
     }
 
+    /*
+        Add an Assignment to a specific course that is already passed in Assignment
+     */
     public boolean addAssignment(Assignment a) {
         int index = findCourse(a.getEventLocation());
 
@@ -84,6 +89,9 @@ public class CourseManager {
         }
     }
 
+    /*
+        Add an Exam to a specific course that is already passed in Exam
+     */
     public boolean addExam(Exam e) {
         int index = findCourse(e.getEventLocation());
 
@@ -96,7 +104,10 @@ public class CourseManager {
         }
     }
 
-    public boolean addExtra(Others e) {
+    /*
+        Add an Others to a specific course that is already passed in Exam
+     */
+    public boolean addOthers(Others e) {
         int index = findCourse(e.getEventLocation());
 
         if (index != -1) {

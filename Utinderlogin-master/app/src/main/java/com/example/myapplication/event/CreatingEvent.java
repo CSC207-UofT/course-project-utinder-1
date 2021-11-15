@@ -25,9 +25,9 @@ import java.util.Map;
 
 public class CreatingEvent extends AppCompatActivity {
 
-    private HashMap<String, Object> events = new HashMap<>();
-    private ArrayList<Map<String, String>> courseEvents = new ArrayList<>();
-    private ArrayList<Map<String, String>> generalEvents = new ArrayList<>();
+    private HashMap events = new HashMap<>();
+    private ArrayList courseEvents = new ArrayList<>();
+    private ArrayList generalEvents = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
