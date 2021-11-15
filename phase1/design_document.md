@@ -138,22 +138,24 @@ Furthermore, we initially had 4 classes related to Post, but now we have 2 class
 *Does your program do what the specification says it should do?*
 
 We have completed to implement the UI for logging in and seeing the homepage, mostly finished with showing Pomodoro timer in the homepage and 
-showing the events in the Calendar. And we have basic features for Community page and Me page. 
+showing the events in the Calendar. It is also able to create and add an event in the Calendar. And we have basic features for Community page and Me page. 
 
 ### A progress report
 #### Open Questions of Struggle
 *open questions your group is struggling with*
 - We are now questioning whether Posts should contain pictures as our database has a 5 GB limit on storage. Therefore, including pictures might take up too much space.
 - We need to find the efficient answer for where to display timetable and add the specific courses that the User is taking for the semester.
+- Since the homepage is showing the short-summary of task and event shows the created event, I am thinking of making the task and event stuff separately or create another function and view for adding a new task. 
 - Rachel has the following concerns:
   - whether to create GeneralEvent and CourseEvent as parent classes or directly have 5 different events as subclasses. 
   - how to update the newly created `Assignment, Exam, Others` to the CourseManager. 
 
 #### Success
 *what has worked well so far with your design*
-- We have been able to push the android app to the main branch
+- We have been able to push the android app to the main branch.
 - The recursive structure for Posts seem to work fine with all the testing so far.
 - We finally set up the firebase for the app. 
+- Ellie's pushing problem from intelliJ has been solved. (appointment with technician TA)
 
 #### Summary of each member's contribution
 *a summary of what each group member has been working on and plans to work on next*
