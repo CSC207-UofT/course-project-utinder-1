@@ -12,7 +12,7 @@ import static org.junit.Assert.assertTrue;
 public class EventTest {
     private EventManager testManager;
     private CourseManager testManager2;
-    // How to call in Before
+
     @Before
     public void setUp() {
         testManager = new EventManager();
@@ -120,7 +120,7 @@ public class EventTest {
         String date = "2021-12-01";
         String time = "12:00PM";
         String course = "CSC207F1";
-        boolean actual_result = testManager2.addExtra(new Others(name, date, time, course));
+        boolean actual_result = testManager2.addOthers(new Others(name, date, time, course));
         assertTrue(actual_result);
     }
 
@@ -130,7 +130,7 @@ public class EventTest {
         String date = "2021-12-03";
         String time = "10:00AM";
         String course = "CSC236F1";
-        boolean actual_result = testManager2.addExtra(new Others(name, date, time, course));
+        boolean actual_result = testManager2.addOthers(new Others(name, date, time, course));
         assertFalse(actual_result);
     }
 

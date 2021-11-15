@@ -3,19 +3,13 @@ package com.example.myapplication.event;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-// Are we going to put the course in the same calendar as the event?
-// Should we add its lecture room/tutorial room number?
-// are we going to distinguish them by the lecture/tutorial => lecture and tutorial in a seperate section!
-// need to work on the dataset for the courses! (Need to export json file from the website using API)
-
 /*
     This class is for creating either one lecture or tutorial section for one course!
  */
 public class Course {
-    private String courseCode; // the format should be course code + semester + campus
-    private String section;
-    // How to store the lecture and tutorial time in an efficient way?
-    private HashMap<String, String[]> time; // key: day, value: [startTime, endTime];
+    final private String courseCode;
+    final private String section;
+    final private HashMap<String, String[]> time; // key: day, value: [startTime, endTime];
     private ArrayList<Assignment> assignment;
     private ArrayList<Exam> exam;
     private ArrayList<Others> others; // list of homeworks that are not assignments/exam
