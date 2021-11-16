@@ -149,7 +149,7 @@ For the phase 1, we created test files for Event and Post in which all the Unit 
 | Member  | Contribution |
 | ------------- | ------------- |
 | Justin Cha | Worked on the back end part of our app. Created and set up the database for the app. Created a server and connected it to the app and created cloud storage with Aaditya. Helped out with couple programming parts of other members. Plan to work on the security part of the database |
-| Aaditya Mandel  | Helped out with the back end part with Justin. Created cloud storage for the app on the server with Justin. Also gave ideas and helped out with couple Gui parts. Also made the pomodoro page (study timer).|
+| Aaditya Mandal  | Helped out with the back end part with Justin. Created cloud storage for the app on the server with Justin. Also gave ideas and helped out with couple Gui parts. Also made the pomodoro page (study timer).|
 | Michael Rubenstein  | Designed the structure and collaborated on the implementation for Post and Post related classes with Kex. Cleaned up structure, and fixed potential errors for Post. Added unit testing for Post to find bugs and see if it behaves according to our design.|
 | Kex Zhang  | Designed the structure and impelementedd the Post-related class (Post class, PostManager class), and collaborated on the incorporation of design pattern and unit testing with Michael. |
 | Ellie Kang  | Designed gui for each required screen (registration view, registration success view, homepage view, calendar view (rachel helped me a lot), event view, creating event view and me view); modified Java class for the functionality of the screen component. Will work on modifying and updating any design-related features|
