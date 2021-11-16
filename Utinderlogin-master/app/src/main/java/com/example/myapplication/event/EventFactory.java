@@ -11,9 +11,8 @@ public class EventFactory {
                 return new Assignment(name, date, time, location);
             case "exam":
                 return new Exam(name, date, time, location);
-            case "others":
+            default:
                 return new Others(name, date, time, location);
         }
-        return new Event(name, date, time, location, type);
     }
 }
