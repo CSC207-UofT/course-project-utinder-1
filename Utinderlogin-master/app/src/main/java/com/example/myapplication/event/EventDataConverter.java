@@ -1,24 +1,17 @@
 package com.example.myapplication.event;
 
-import com.example.myapplication.login.user.User;
 import java.util.HashMap;
 
 public class EventDataConverter {
-    /*
-        A method that passes the previous data to EventManager
+    private HashMap userData;
 
-        Will modify later
-     */
-    public HashMap passData (User name, HashMap data) {
-        EventManager manager = new EventManager();
-        return data;
+    public EventDataConverter(HashMap data) {
+        this.userData = data;
     }
 
     public boolean addNewEvent(String name, String date, String time, String location, String type) {
         EventManager e = new EventManager();
-
-        // call EventManager.setData to get the previous data
-
+        e.setEvents(this.userData);
         return e.createEvent(name, date, time, location, type);
     }
 }

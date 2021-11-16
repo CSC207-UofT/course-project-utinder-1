@@ -3,7 +3,7 @@ package com.example.myapplication.event;
 public class EventFactory {
     public Event createEvent(String name, String date, String time, String location, String type) {
         switch (type) {
-            case "academic":
+            case "meeting":
                 return new Meeting(name, date, time, location);
             case "extracurricular":
                 return new ExtracurricularEvent(name, date, time, location);
@@ -11,7 +11,7 @@ public class EventFactory {
                 return new Assignment(name, date, time, location);
             case "exam":
                 return new Exam(name, date, time, location);
-            case "miscellaneous":
+            case "others":
                 return new Others(name, date, time, location);
         }
         return new Event(name, date, time, location, type);

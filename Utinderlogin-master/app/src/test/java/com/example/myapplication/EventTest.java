@@ -3,7 +3,10 @@ package com.example.myapplication;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 import com.example.myapplication.event.*;
 import static org.junit.Assert.assertFalse;
@@ -16,6 +19,21 @@ public class EventTest {
     @Before
     public void setUp() {
         testManager = new EventManager();
+        HashMap<String, ArrayList<Map<String, String>>> events = new HashMap<>();
+        Map<String, String> meeting = new HashMap<>();
+        meeting.put("name", "KOVA Meeting");
+        meeting.put("date", "2021-11-01");
+        meeting.put("time", "9:00PM");
+        meeting.put("type", "extracurricular");
+        meeting.put("location", "BA1201");
+
+        ArrayList<Map<String, String>> meetingList = new ArrayList<>();
+        meetingList.add(meeting);
+
+        events.put("CourseEvents", new ArrayList<>());
+        events.put("GeneralEvents", meetingList);
+
+        testManager.setEvents(events);
         testManager2 = new CourseManager();
     }
 
