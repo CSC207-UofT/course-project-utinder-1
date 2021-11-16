@@ -80,7 +80,7 @@ it might be good to rather create the parent class of "CourseEvent" for those th
 - Is the Dependency Rule consistently followed when interacting with details in the outer layer?
   - Give us a concrete example from something like your UI or an interaction with a database.
 
-The **UML Diagram** for the entire project can be found in `phase1/UML Diagram` directory in the main branch of our repository. 
+The **UML Diagram** for the entire project can be found in `phase1` directory from the main branch of our repository. 
 
 **Scenario Walk-Through (demonstrating Clean Architecture)**
 
@@ -128,21 +128,24 @@ feature in Gitub via web editor. This tool helped to see in which area there was
 branch files and the main branch files.
 
 ### Refactoring
-*Is there evidence that your team has refactored code in a meaningful way during the project?*
-
 We decided to delete UserData and EventTable as the purpose of these classes were overlapped with UserManager and EventManager. 
 Furthermore, we initially had 4 classes related to Post, but now we have 2 classes (`Post` and `PostManager`) as explained in **Major Design Decision** section above.
 
 
 ### Functionality
-*Does your program do what the specification says it should do?*
 
 We have completed to implement the UI for logging in and seeing the homepage, mostly finished with showing Pomodoro timer in the homepage and 
-showing the events in the Calendar. It is also able to create and add an event in the Calendar. And we have basic features for Community page and Me page. 
+showing the events in the Calendar. It is also able to create and add an event in the Calendar. And we have basic features for Community page and Me page. And for the Event page, we implemented the code to connect the database with GUI. However, when we add the event, we only uses the list of Events under the User "admin". 
+
+For the phase 2, we are going to connect the Community-related GUI with our Post-related classes for making sure that the User can upload and reply to the post. And we are also going to add the functionality of keeping track of other Users that the User follows or is followed by. Then, we will try to work on displaying the relevant data of each User. Furthermore, we plan to work with the database, such as security-related issues and so on. 
+
+
+### Testing
+For the phase 1, we created test files for Event and Post in which all the Unit tests were passed. We especially tested with the functionality of EventManager and PostManager, such as creating, deleting, editing of the relevant objects. We are planning to add more tests regarding GUI part for the phase 2. 
+
 
 ### A progress report
 #### Open Questions of Struggle
-*open questions your group is struggling with*
 - We are now questioning whether Posts should contain pictures as our database has a 5 GB limit on storage. Therefore, including pictures might take up too much space.
 - We need to find the efficient answer for where to display timetable and add the specific courses that the User is taking for the semester.
 - Since the homepage is showing the short-summary of task and event shows the created event, I am thinking of making the task and event stuff separately or create another function and view for adding a new task. 
@@ -151,20 +154,17 @@ showing the events in the Calendar. It is also able to create and add an event i
   - how to update the newly created `Assignment, Exam, Others` to the CourseManager. 
 
 #### Success
-*what has worked well so far with your design*
 - We have been able to push the android app to the main branch.
 - The recursive structure for Posts seem to work fine with all the testing so far.
 - We finally set up the firebase for the app. 
 - Ellie's pushing problem from intelliJ has been solved. (appointment with technician TA)
 
 #### Summary of each member's contribution
-*a summary of what each group member has been working on and plans to work on next*
-
-| Member  | Description |
+| Member  | Contribution |
 | ------------- | ------------- |
-| Justin Cha | Content Cell  |
-| Aaditya Mendel  | Content Cell  |
+| Justin Cha | Worked on the back end part of our app. Created and set up the database for the app. Created a server and connected it to the app and created cloud storage with Aaditya. Helped out with couple programming parts of other members. Plan to work on the security part of the database |
+| Aaditya Mandel  | Helped out with the back end part with Justin. Created cloud storage for the app on the server with Justin. Also gave ideas and helped out with couple Gui parts. Also made the pomodoro page (study timer).|
 | Michael Rubenstein  | Designed the structure and collaborated on the implementation for Post and Post related classes with Kex. Cleaned up structure, and fixed potential errors for Post. Added unit testing for Post to find bugs and see if it behaves according to our design.|
-| Kex Zhang  | Designed the structure and impelementedd the Post-related class (Post class, PostManager class), and collaborated on the incorporation of design pattern and unit testing with Michael.  |
-| Ellie Kang  | Designed gui for each required screen (registration view, registration success view, homepage view, calendar view (rachel helped me a lot), event view, creating event view and me view); modified Java class for the functionality of the screen component.  |
-| Rachel Seong  | Implemented the Event-related classes; made an interaction between Java class for UI to the Event classes; plan to add the functionality for each different User with their own Event data; Created UML Diagram|
+| Kex Zhang  | Designed the structure and impelementedd the Post-related class (Post class, PostManager class), and collaborated on the incorporation of design pattern and unit testing with Michael. |
+| Ellie Kang  | Designed gui for each required screen (registration view, registration success view, homepage view, calendar view (rachel helped me a lot), event view, creating event view and me view); modified Java class for the functionality of the screen component. Will work on modifying and updating any design-related features|
+| Rachel Seong  | Implemented the Event-related classes; made an interaction between Java class for UI to the Event classes; plan to add the functionality for each different User with their own Event data; Created UML Diagram |
