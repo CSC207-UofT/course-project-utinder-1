@@ -1,8 +1,6 @@
 # Design Document
 
 ### Specification
-*Briefly highlight any additional functionality that you have implemented between phase 0 and the end of phase 1.*
-
 From the phase 0, we had the specification as following:
 
 From this project, we would like to create an Android app that provides both academic and social assistance
@@ -28,7 +26,6 @@ For phase 1, we decided to modify and extend the following things:
 - The User can "unlike" posts, not "dislike" posts.
 
 ### Major Design Decision
-*A description of any major design decisions your group has made (along with brief explanations of why you made them).*
 
 During the phase 1, there was an active discussion regarding the design of our app with related Java classes.
 
@@ -58,11 +55,6 @@ But by distinguishing the common features and different features among the subcl
 
 
 ### SOLID
-*How well does your design adhere to the SOLID design principles?*
-- Give us specific examples of how your design adheres to the SOLID principles.
-- If you found that something in your design wasn't good, tell us about that too!
-  - Pretending part of your design is good — when you know it isn't — can potentially hurt your mark significantly!
-  - Acknowledging bad design can earn you marks and demonstrates understanding — especially if you discuss how you could fix it if you had more time!
 
 Even though our codes do not reflect all of five SOLID principles, we believe that we still have good examples that satisfy some of them. 
 For instance, Event class represents Open/Closed Principle in which all the subclasses share the same behavior, so we only needed to implement methods in the parent class, which later helps to extend
@@ -73,12 +65,6 @@ it might be good to rather create the parent class of "CourseEvent" for those th
 
 
 ### Clean Architecture
-*Is your program consistent with Clean Architecture?*
-- Show us with something like a CRC model or UML diagram.
-- Describe a scenario walk-through and highlight how it demonstrates Clean Architecture.
-- Are there any clear violations if we were to randomly look at the imports in a few of your files?
-- Is the Dependency Rule consistently followed when interacting with details in the outer layer?
-  - Give us a concrete example from something like your UI or an interaction with a database.
 
 The **UML Diagram** for the entire project can be found in `phase1` directory from the main branch of our repository. 
 
