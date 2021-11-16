@@ -14,8 +14,6 @@ import android.widget.TextView;
 
 import com.example.myapplication.R;
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.*;
 
@@ -73,73 +71,61 @@ public class CreatingEvent extends AppCompatActivity {
                             courseEvents = (ArrayList) events.get("CourseEvents");
                             generalEvents = (ArrayList) events.get("GeneralEvents");
 
-                            // When the event is general event
+                            HashMap<String, HashMap> newData = new HashMap<>();
+                            HashMap<String, ArrayList> newAdminData = new HashMap<>();
+
+                            boolean result = checkAddingData(newAdminData, name, date, time, location, code, type);
+
+                            // When the event is general event (e.g. meeting, extracurricular event)
                             if (code.equals("")) {
                                 newEvent.put("location", location);
                                 generalEvents.add(newEvent);
-                                HashMap<String, HashMap> newData = new HashMap<>();
-                                HashMap<String, ArrayList> newAdminData = new HashMap<>();
-                                newAdminData.put("GeneralEvents", generalEvents);
-                                newAdminData.put("CourseEvents", courseEvents);
-                                newData.put("admin", newAdminData);
-                                userEvents.set(newData).addOnSuccessListener(new OnSuccessListener<Void>() {
-                                    @Override
-                                    public void onSuccess(Void aVoid) {
-                                        Log.d("Creating Event", "Successfully added new data");
-                                    }
-                                })
-                                .addOnFailureListener(new OnFailureListener() {
-                                    @Override
-                                    public void onFailure(@NonNull Exception e) {
-                                        Log.w("Creating Event", "Failed to add new data", e);
-                                    }
-                                });
                             } else { // when the event is assignment/exam/other homeworks
                                 newEvent.put("code", code);
-
-                                // add the data to the database
                                 courseEvents.add(newEvent);
-                                HashMap<String, HashMap> newData = new HashMap<>();
-                                HashMap<String, ArrayList> newAdminData = new HashMap<>();
-                                newAdminData.put("GeneralEvents", generalEvents);
-                                newAdminData.put("CourseEvents", courseEvents);
-                                newData.put("admin", newAdminData);
-                                userEvents.set(newData).addOnSuccessListener(new OnSuccessListener<Void>() {
-                                    @Override
-                                    public void onSuccess(Void aVoid) {
-                                        Log.d("Creating Event", "Successfully added new data");
-                                    }
-                                })
-                                .addOnFailureListener(new OnFailureListener() {
-                                    @Override
-                                    public void onFailure(@NonNull Exception e) {
-                                        Log.w("Creating Event", "Failed to add new data", e);
-                                    }
-                                });
+                            }
+
+                            newAdminData.put("GeneralEvents", generalEvents);
+                            newAdminData.put("CourseEvents", courseEvents);
+                            // We are currently dealing with the data under the User "admin"
+                            newData.put("admin", newAdminData);
+
+                            // Check whether the data is duplicated or not
+
+                            if (result) {
+                                userEvents.set(newData);
+                                Log.d("Creating Event", "Successfully added new data");
+                                Intent back_to_event = new Intent(CreatingEvent.this,
+                                        ActivityEvent.class);
+                                startActivity(back_to_event);
+                                finish();
+                            } else {
+                                Log.w("Creating Event", "Failed to add new data");
+                                failed.setVisibility(View.VISIBLE);
                             }
                         } else {
-                            Log.d("Creating Event", "get failed with", task.getException());
+                            Log.d("Creating Event", "failed to obtain the data", task.getException());
+                            failed.setVisibility(View.VISIBLE);
                         }
                     }
                 });
-
-                // Call EventDataConverter and its addEvent() method
-                EventDataConverter dataConverter= new EventDataConverter();
-                boolean result;
-                if (code.equals("")) {
-                    result = dataConverter.addNewEvent(name, date, time, location, type);
-                } else {
-                    result = dataConverter.addNewEvent(name, date, time, code, type);
-                }
-                if (result) {
-                    Intent back_to_event = new Intent(CreatingEvent.this, ActivityEvent.class);
-                    startActivity(back_to_event);
-                    finish();
-                } else {
-                    failed.setVisibility(View.VISIBLE);
-                }
-
             }
         });
     }
+
+    /*
+        Check whether new data is duplicated in the database or not.
+        If it is a new data, then return true. Otherwise, return false.
+     */
+    public static boolean checkAddingData(HashMap newData, String name, String date, String time, String location, String code, String type) {
+        EventDataConverter dataConverter= new EventDataConverter(newData);
+        boolean result;
+        if (code.equals("")) {
+            result = dataConverter.addNewEvent(name, date, time, location, type);
+        } else {
+            result = dataConverter.addNewEvent(name, date, time, code, type);
+        }
+        return result;
+    }
+
 }
