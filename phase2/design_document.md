@@ -27,9 +27,7 @@ Our project mainly consists of the following principles: Open/Closed Principle.
 
 
 ## Design Pattern
-During the phase 1, there was an active discussion regarding the design of our app with related Java classes.
-
-**--Changes in Post-related classes--**
+**--Post-related classes--**
 
 At first, we were following the composite design patter and implemented an abstract class called Post for giving the
 structure to posts, then a class called MainPost that extended from it, and another class called Comment.
@@ -40,7 +38,7 @@ composite design pattern for this case as we don't have a leaf case. We realized
 and be less cluttered if we had only one class for all posts, then have an overloaded constructor to determine which
 post contains a title and which post doesn't. This made the code much simpler and easier to understand.
 
-**--Decision in adding more Event-related classes--**
+**--Event-related classes--**
 
 In phase 0, we were planning to have Event as a parent class and Course as a subclass. However, as there is no "is a" relationship,
 we decided to have the following classes as subclasses of Event:
@@ -56,6 +54,8 @@ By now, we applied the Simple Factory method design pattern in creating new `Eve
 because of the common features that different types of events share (as mentioned in the section **Major Design Decision** above). And this Factory design pattern provided 
 a simpler implementation compared to other design patterns, such as the Builder design pattern. 
 
+**--User-related classes--**
+
 
 
 ## Use of Github Features
@@ -65,36 +65,41 @@ feature in Gitub via web editor. This tool helped to see in which area there was
 branch files and the main branch files.
 
 ## Code Style and Documentation
-### Packaging Strategies & Code Organization
+### Packaging Strategies
 We decided to use "package by feature" strategy to indicate different pages in the app that the User can click and see. 
 While we considered using "package by insider/outsider", it was much better to have all the classes related to one feature together 
 to easily interact with each class. 
 
-For code organization, as Android app already distributes the files into different folders, we were able to easily keep track of which class files are in which directory.
+### Code Organization
 
 ## Testing
+**--User-related classes--**
+
+**--Event-related classes--**
+
+**--Post-related classes--**
 
 ## Refactoring
-We decided to delete UserData and EventTable as the purpose of these classes were overlapped with UserManager and EventManager. 
-Furthermore, we initially had 4 classes related to Post, but now we have 2 classes (`Post` and `PostManager`) as explained in **Major Design Decision** section above.
 
 
 ## Functionality
-We have completed to implement the UI for logging in and seeing the homepage, mostly finished with showing Pomodoro timer in the homepage and 
-showing the events in the Calendar. It is also able to create and add an event in the Calendar. And we have basic features for Community page and Me page. And for the Event page, we implemented the code to connect the database with GUI. However, when we add the event, we only uses the list of Events under the User "admin". 
 
-For the phase 2, we are going to connect the Community-related GUI with our Post-related classes for making sure that the User can upload and reply to the post. And we are also going to add the functionality of keeping track of other Users that the User follows or is followed by. Then, we will try to work on displaying the relevant data of each User. Furthermore, we plan to work with the database, such as security-related issues and so on. 
-
-
-### Testing
 
 
 ## Progress Report
-### Success
-- 
 
 ### Summary of each member's contribution
 | Member  | Contribution |
+| ------------- | ------------- |
+| Justin Cha |  |
+| Aaditya Mandal  | |
+| Michael Rubenstein  | |
+| Kex Zhang  | |
+| Ellie Kang  | |
+| Rachel Seong  |  |
+
+### Summary of each member's Pull Requests
+| Member  | Pull Request |
 | ------------- | ------------- |
 | Justin Cha |  |
 | Aaditya Mandal  | |
