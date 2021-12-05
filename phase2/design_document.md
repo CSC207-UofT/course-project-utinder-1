@@ -95,7 +95,7 @@ to easily interact with each class.
 | Aaditya Mandal  | |
 | Michael Rubenstein  | |
 | Kex Zhang  | |
-| Ellie Kang  | |
+| Ellie Kang  | Modifying homepage view (added the function for adding tasks and pomodoro stuff) |
 | Rachel Seong  |  |
 
 ### Summary of each member's Pull Requests
