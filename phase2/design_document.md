@@ -17,9 +17,21 @@ for the students at the University of Toronto.
   * In the *My Account* page, the User can keep track of Users that User is currently following and other Users who follow this particular User
 
 ## SOLID
-Our project mainly consists of the following principles: Open/Closed Principle. 
+### Single Responsibility Principle
+In our project, 
 
+### Open/Closed Principle
 `Event` class represents Open/Closed Principle in which all the subclasses share the same behavior, so we only needed to implement methods in the parent class, which later helps to extend more types of events by any chance. In addition, as those different types of events share the same behaviour in general, it also satisfies the Liskov Substitution Principle. 
+
+### Liskov Substitution Principle
+Even though we did not implement interfaces in our project, but using inheritance, our project performs LSP. For instance, all subclasses in `Event` class follow operations that `Event` class do. 
+
+### Interface Segregation Principle
+For this principle, since we did not implement any interfaces and as all subclasses should use all of their superclass methods, we want to conclude that ISP is not applicable in our project. 
+
+### Dependency Inversion Principle
+Dependency Inversion Principle tells us that high level modules should not depend on low level modules, such as user interface. As this principle is tightly related to Clean Architecture, and as we did not violate any dependency rules in clean architecture, our project follows DIP. 
+
 
 
 ## Clean Architecture
