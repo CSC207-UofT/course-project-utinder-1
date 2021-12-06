@@ -104,7 +104,7 @@ to easily interact with each class.
 | Member  | Contribution |
 | ------------- | ------------- |
 | Justin Cha | Finished error handling for the login classes. Linked up user authentication for higher security. Changed the way data is stored for user credentials. Made unit tests for the login classes. |
-| Aaditya Mandal  | |
+| Aaditya Mandal  | Designed and implemented the Pomodoro Timer to the application, along with assisting Ellie with the UI of the homepage such as adding tasks. Increased security level for the database by adding the authentication email per user when they sign up.|
 | Michael Rubenstein  | Created / fixed basic UI for viewing posts and comments, implemented functions to show the data in the UI, implemented unit tests, collaborated with kex in design and implementation of connecting posts to firestore. | 
 | Kex Zhang  | Designed and implemented the community page, making post page, view post page, reply post page, view comment page, reply comment page, and update the posts to database with Micheal. |
 | Ellie Kang  | Modifying homepage view (added the functions for adding tasks and pomodoro stuff), Fixed UI for posts and comments from Michael and Kex. Added some necessary functions for logging out and renewing bottom navigation. |
