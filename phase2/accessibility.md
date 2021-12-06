@@ -1,4 +1,5 @@
-1.
+1.For each Principle of Universal Design, write 2-5 sentences or point form notes explaining which features your program adhere to that principle.
+
 Principle 1: Equitable Use
 
 - All features are accessible to all users no matter whether they are Students or Faculty
