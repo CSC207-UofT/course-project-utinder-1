@@ -18,7 +18,7 @@ for the students at the University of Toronto.
 
 ## SOLID
 ### Single Responsibility Principle
-In our project, 
+Single Responsibility Principle states that there should be only one actor in each class, or equivalently, there should be only one reason to change. Our project clearly depicts this principle. All the activity classes that relate to the User Interface only take care of those details in the UI. Entities classes, such as `User`, `Event`, and `Post`, are only responsible for dealing with a single of object of those types. 
 
 ### Open/Closed Principle
 `Event` class represents Open/Closed Principle in which all the subclasses share the same behavior, so we only needed to implement methods in the parent class, which later helps to extend more types of events by any chance. In addition, as those different types of events share the same behaviour in general, it also satisfies the Liskov Substitution Principle. 
