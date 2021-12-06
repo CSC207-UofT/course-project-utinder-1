@@ -106,9 +106,9 @@ to easily interact with each class.
 | Justin Cha |  |
 | Aaditya Mandal  | |
 | Michael Rubenstein  | Created / fixed basic UI for viewing posts and comments, implemented functions to show the data in the UI, implemented unit tests, collaborated with kex in design and implementation of connecting posts to firestore. | 
-| Kex Zhang  | |
+| Kex Zhang  | Designed and implemented the community page, making post page, view post page, reply post page, view comment page, reply comment page, and update the posts to database with Micheal. |
 | Ellie Kang  | Modifying homepage view (added the functions for adding tasks and pomodoro stuff), Fixed UI for posts and comments from Michael and Kex. Added some necessary functions for logging out and renewing bottom navigation. |
-| Rachel Seong  |  |
+| Rachel Seong  | Implemented a popup window of showing the list of events on the selected date, Designed other user’s Profile page, Implemented the code for controlling following/follower features |
 
 ### Summary of each member's Pull Requests
 | Member  | Pull Request |
