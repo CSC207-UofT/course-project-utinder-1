@@ -93,7 +93,7 @@ to easily interact with each class.
 | ------------- | ------------- |
 | Justin Cha |  |
 | Aaditya Mandal  | |
-| Michael Rubenstein  | | Created / fixed UI for viewing posts and comments, implemented functions to show the data in the UI, implemented unit tests, collaborated with kex in design and implementation of connecting posts to firestore.
+| Michael Rubenstein  | Created / fixed UI for viewing posts and comments, implemented functions to show the data in the UI, implemented unit tests, collaborated with kex in design and implementation of connecting posts to firestore. | 
 | Kex Zhang  | |
 | Ellie Kang  | Modifying homepage view (added the function for adding tasks and pomodoro stuff) |
 | Rachel Seong  |  |
