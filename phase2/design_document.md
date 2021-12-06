@@ -35,7 +35,7 @@ Dependency Inversion Principle tells us that high level modules should not depen
 
 
 ## Clean Architecture
-
+Our project clearly follows the clean architecture as shown in the [diagram](https://github.com/CSC207-UofT/course-project-utinder-1/blob/77b29a1f72fe4b920dc33aa1bdbfd1518bbf8191/phase2/CSC207-20.jpg). For the outer layer, we have Android application with corresponding its Activity classes and Firebase. To make an interaction between the infrastructure layer and application layer, we made some data converter classe which is located in Adapter layer. Then for Use Case, there are three manager classes, `UserManager`, `PostManager`, `EventManager`. Lastly, Entities layer consist of various classes of `User`, `Post`, and `Event`. 
 
 
 ## Design Pattern
