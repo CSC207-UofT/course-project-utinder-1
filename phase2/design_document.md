@@ -107,7 +107,7 @@ to easily interact with each class.
 | Aaditya Mandal  | |
 | Michael Rubenstein  | Created / fixed basic UI for viewing posts and comments, implemented functions to show the data in the UI, implemented unit tests, collaborated with kex in design and implementation of connecting posts to firestore. | 
 | Kex Zhang  | |
-| Ellie Kang  | Modifying homepage view (added the function for adding tasks and pomodoro stuff) |
+| Ellie Kang  | Modifying homepage view (added the functions for adding tasks and pomodoro stuff), Fixed UI for posts and comments from Michael and Kex. Added some necessary functions for logging out and renewing bottom navigation. |
 | Rachel Seong  |  |
 
 ### Summary of each member's Pull Requests
