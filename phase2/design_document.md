@@ -103,7 +103,7 @@ to easily interact with each class.
 ### Summary of each member's contribution
 | Member  | Contribution |
 | ------------- | ------------- |
-| Justin Cha |  |
+| Justin Cha | Finished error handling for the login classes. Linked up user authentication for higher security. Changed the way data is stored for user credentials. Made unit tests for the login classes. |
 | Aaditya Mandal  | |
 | Michael Rubenstein  | Created / fixed basic UI for viewing posts and comments, implemented functions to show the data in the UI, implemented unit tests, collaborated with kex in design and implementation of connecting posts to firestore. | 
 | Kex Zhang  | Designed and implemented the community page, making post page, view post page, reply post page, view comment page, reply comment page, and update the posts to database with Micheal. |
