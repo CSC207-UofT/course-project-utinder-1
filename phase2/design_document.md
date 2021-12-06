@@ -41,30 +41,18 @@ Our project clearly follows the clean architecture as shown in the [diagram](htt
 ## Design Pattern
 **--Post-related classes--**
 
-At first, we were following the composite design patter and implemented an abstract class called Post for giving the
-structure to posts, then a class called MainPost that extended from it, and another class called Comment.
-The idea was that MainPost and Comment were essentially the same, but you are unable to add a title for Comment and
-are only able to reply to MainPosts / Comments with Comment. However, after discussing the code structure with
-teammates we realized that since we are able to comment under comments, it didn't make sense to implement the
-composite design pattern for this case as we don't have a leaf case. We realized that it would be much easier to read
-and be less cluttered if we had only one class for all posts, then have an overloaded constructor to determine which
-post contains a title and which post doesn't. This made the code much simpler and easier to understand.
+In phase 2, we connected post and its related classes to our database, so that whenever a user makes a new post, the post will be updated to
+the database and added to the community page. Then, when visualizing all the posts dynamically in order of posting time, we need to use the
+list view feature in android studio, which takes a list of strings and a specified layout. However, we retrieve our data in the database in 
+form of map, which maps from the title of the post to the post object itself (the customized object). At this point, to make our data usable
+for visualizing, we applied the adapter design pattern as a middleman to fit our data into proper layout of the community page, which enables 
+the visualization of our app.
 
 **--Event-related classes--**
 
-In phase 0, we were planning to have Event as a parent class and Course as a subclass. However, as there is no "is a" relationship,
-we decided to have the following classes as subclasses of Event:
-- General Event (e.g. Meeting, Extracurricular Event) is a personal event (not related to the course the User is taking)
-- Course Event (e.g. Assignment, Exam, Others) is an event that is related to the specific course that the User is currently taking
-
-Because this change lets us more easily understand the relationship between the classes, we decided to make the decision as above. 
-
-Furthermore, when we needed to apply the Simple Factory method design pattern, it was quite hard to come up with which parameters should be called.
-But by distinguishing the common features and different features among the subclasses of Event, we decided to come up as the current version.
-
-By now, we applied the Simple Factory method design pattern in creating new `Event` class in our project. We decided to use the particular design pattern
-because of the common features that different types of events share (as mentioned in the section **Major Design Decision** above). And this Factory design pattern provided 
-a simpler implementation compared to other design patterns, such as the Builder design pattern. 
+In phase 2, we applied the Simple Factory method design pattern in creating new `Event` class in our project. We decided to use this particular design pattern
+because different types of events are sharing some common features. And this Factory design pattern provided a simpler implementation compared to other design
+patterns, such as the Builder design pattern. 
 
 **--User-related classes--**
 
