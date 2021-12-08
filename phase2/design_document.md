@@ -32,11 +32,17 @@ In our project, we did not implement any interfaces, but only used the inheritan
 ### Dependency Inversion Principle
 Dependency Inversion Principle tells us that high level modules should not depend on low level modules, such as user interface. As this principle is tightly related to Clean Architecture, and as we did not violate any dependency rules in clean architecture, our project follows DIP. 
 
-
-
 ## Clean Architecture
-Our project clearly follows the clean architecture as shown in the [diagram](https://github.com/CSC207-UofT/course-project-utinder-1/blob/77b29a1f72fe4b920dc33aa1bdbfd1518bbf8191/phase2/CSC207-20.jpg). For the outer layer, we have Android application with corresponding its Activity classes and Firebase. To make an interaction between the infrastructure layer and application layer, we made some data converter classe which is located in Adapter layer. Then for Use Case, there are three manager classes, `UserManager`, `PostManager`, `EventManager`. Lastly, Entities layer consist of various classes of `User`, `Post`, and `Event`. 
+Our project clearly follows the clean architecture as shown in the [diagram](https://github.com/CSC207-UofT/course-project-utinder-1/blob/5b797fa09ec5d77cb94173a0140e5b7acdae9b8a/phase2/clean%20architecture%20simple%20diagram.jpg). For the outer layer, we have Android application with corresponding its Activity classes and Firebase. To make an interaction between the infrastructure layer and application layer, we made some data converter classe which is located in Adapter layer. Then for Use Case, there are three manager classes, `UserManager`, `PostManager`, `EventManager`. Lastly, Entities layer consist of various classes of `User`, `Post`, and `Event`. 
 
+### Scenario Walk-Through for Clean Architecture
+**When the User signs in**
+1. The User starts to run the app, and Welcome screen page will be displayed. 
+2. After a few seconds, the User sees the Sign-in page, in which they need to type their email address and the password. 
+3. After the User types the information, the `MainActivity` class (an activity class for Sign-in page) will call `UserDataConverter` to check whether their email address and password are correct by passing the information to it. 
+4. This `UserDataConverter` will then call and pass these information to `UserManager`, which will check whether everything is correct. 
+5. If everything is correct, then `true` value will be returned, which will be used by `UserDataConverter` and `MainActivity` sequentially.
+6. After receving the success sign, `MainActivity` will call a method to display `Homepage`. 
 
 ## Design Pattern
 **--Post-related classes--**
@@ -90,6 +96,8 @@ One of the biggest change was establishing and linking most of the data to the d
 New implementation of the Pomodoro Timer which is a study focus timer, which can be found on the bottom navigation bar. 
 
 New implementation of Task from the homepage where users can add short-term tasks such as TO DOs that they can add and remove smoothly.
+
+Lastly, we repackaged all the files in each page into the specific layer of the clean architecture to understand their relationship. 
 
 ## Functionality
 For the phase 2, we connected various features and database together. For each page in our app, we've added the following features/functions for the better app performance:
