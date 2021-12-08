@@ -27,7 +27,7 @@ Single Responsibility Principle states that there should be only one actor in ea
 Even though we did not implement interfaces in our project, but using inheritance, our project performs LSP. For instance, all subclasses in `Event` class follow operations that `Event` class do. 
 
 ### Interface Segregation Principle
-For this principle, since we did not implement any interfaces and as all subclasses should use all of their superclass methods, we want to conclude that ISP is not applicable in our project. 
+In our project, we did not implement any interfaces, but only used the inheritance. And all of subclasses actually depend on all the methods from their parent class. So we conclude that ISP is not applicable in our project. 
 
 ### Dependency Inversion Principle
 Dependency Inversion Principle tells us that high level modules should not depend on low level modules, such as user interface. As this principle is tightly related to Clean Architecture, and as we did not violate any dependency rules in clean architecture, our project follows DIP. 
@@ -54,9 +54,6 @@ In phase 2, we applied the Simple Factory method design pattern in creating new 
 because different types of events are sharing some common features. And this Factory design pattern provided a simpler implementation compared to other design
 patterns, such as the Builder design pattern. 
 
-**--User-related classes--**
-
-
 
 ## Use of Github Features
 We've mostly used Pull Requests as we worked on different branches for each person and then merged later after
@@ -69,8 +66,6 @@ branch files and the main branch files.
 We decided to use "package by feature" strategy to indicate different pages in the app that the User can click and see. 
 While we considered using "package by insider/outsider", it was much better to have all the classes related to one feature together 
 to easily interact with each class. 
-
-### Code Organization
 
 ## Testing
 
@@ -97,7 +92,23 @@ New implementation of the Pomodoro Timer which is a study focus timer, which can
 New implementation of Task from the homepage where users can add short-term tasks such as TO DOs that they can add and remove smoothly.
 
 ## Functionality
+For the phase 2, we connected various features and database together. For each page in our app, we've added the following features/functions for the better app performance:
 
+### Homepage
+* Added a feature for adding tasks that the User needs to complete with checkbox and connected to the database
+
+### Event
+* Added the ability to display the popup window for all the events on the selected date
+* Connected to the FirebaseAuth to get the current user and extract only their data
+
+### Community
+* Added a feature for making post, comment post, and comment on comments, and this functionality is one of the biggest tasks we've done for phase 2
+
+### Pomodoro
+* Created a page for showing the Pomodoro timer, in which the user can adjust the time interval for the study and break time
+
+### My Account
+* Added a feature for showing the list of followers and followings
 
 
 ## Progress Report
@@ -113,6 +124,8 @@ New implementation of Task from the homepage where users can add short-term task
 | Rachel Seong  | Implemented a popup window of showing the list of events on the selected date, Designed other user’s Profile page, Implemented the code for controlling following/follower features |
 
 ### Summary of each member's Pull Requests
+Each group member should include a link to a significant pull request (or two if you can't pick just one) that they made throughout the term. Include a sentence or two explaining why you think this demonstrates a significant contribution to the team. 
+
 | Member  | Pull Request |
 | ------------- | ------------- |
 | Justin Cha |  |
@@ -120,7 +133,7 @@ New implementation of Task from the homepage where users can add short-term task
 | Michael Rubenstein  | |
 | Kex Zhang  | |
 | Ellie Kang  | |
-| Rachel Seong  |  |
+| Rachel Seong  | One of the pull requests that I'm proud with is [Pull request #7]{https://github.com/Bantonio12/Utinderlogin/pull/7}. In this request, I was able to extract only the data of the user who is currently signed in this app, which indeed extended our functionality. Furthermore, doing some refactoring in the code made the entire project look more efficient.|
 
 ## Accessibility Report
 For each Principle of Universal Design, write 2-5 sentences or point form notes explaining which features your program adhere to that principle. If you do not have any such features you can either:
@@ -171,4 +184,9 @@ Who Would You Market Your Program Towards?
 
 Any Demographics that Would Less Likely Use Your Program?
 - Our program most likely won’t be used by people that are outside of / have no affiliation with University. The app is targeted for University stakeholders and can only be logged onto by people who have email addresses affiliated with a university. Therefore most / if not all users will be people who have university affiliation.
+
+
+## Extension
+After finishing the project, we reflected and wrote down the list of features that we can add in the future. 
+In general, we first thought it would be good to expand to other university students. And we can possibly add group chat functions. Then, for the User side, they might want to set profile pictures which require the larger storage for the database. Then, for the Event, it would be great to add functionality of filtering the events based on its types or corresponding courses. And we can let the user to edit some of the events, which might possibly require the Observer design pattern. Then, for the Community page, it would be great to enable features to comment on comments and apply factory design pattern when reply to post or comment. 
 
