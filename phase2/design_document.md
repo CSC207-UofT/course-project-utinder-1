@@ -73,14 +73,28 @@ to easily interact with each class.
 ### Code Organization
 
 ## Testing
+
 **--User-related classes--**
+For User, we have testing being able to create new users, along with logging in and ensuring all the data is being saved to the database.
 
 **--Event-related classes--**
+For Event, we have tested creating events, adding events and removing events with units tests like Event Creation Fail or Success, Course Creation and Removal Fail or Success, Assignment/Exam/Extra Homework Creation Fail or Success as well.
 
 **--Post-related classes--**
+For the posts, there are unit tests to create, delete, edit, comment, like such as create post test, delete post test, edit post test, make comment and more. Some of the tests required the database to work and we had to check if the new data being entered was successfully being tranferred or not.
+
+For the rest of the app, we were able to test by usage and comparing with the database such as Login, Sign Up, Pomodoro, and various other sections. Ee were able to simply run those seperately continuously such as the Pomodoro, which was tested through actual usage.
 
 ## Refactoring
+One of the biggest change was establishing and linking most of the data to the databse. 
 
+**For Post**, we were able to link all of the posts to Firestone. There was a also a change in the way Comment for Post was implemented. Comments for a Post used to be Post Objets but now it is individual. Comments were changed to be a map with three keys (Text, Mentions, TextID).
+
+**For Events**, there were various new packages that were added to Event and EventTest for the user to better input in their event, which can be assignment, exam, extra work and more. 
+
+New implementation of the Pomodoro Timer which is a study focus timer, which can be found on the bottom navigation bar. 
+
+New implementation of Task from the homepage where users can add short-term tasks such as TO DOs that they can add and remove smoothly.
 
 ## Functionality
 
