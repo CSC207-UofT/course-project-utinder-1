@@ -141,7 +141,7 @@ Each group member should include a link to a significant pull request (or two if
 | Michael Rubenstein  | |
 | Kex Zhang  | |
 | Ellie Kang  | |
-| Rachel Seong  | One of the pull requests that I'm proud with is [Pull request #7]{https://github.com/Bantonio12/Utinderlogin/pull/7}. In this request, I was able to extract only the data of the user who is currently signed in this app, which indeed extended our functionality. Furthermore, doing some refactoring in the code made the entire project look more efficient.|
+| Rachel Seong  | One of the pull requests that I'm proud with is [Pull request #7](https://github.com/Bantonio12/Utinderlogin/pull/7). In this request, I was able to extract only the data of the user who is currently signed in this app, which indeed extended our functionality. Furthermore, doing some refactoring in the code made the entire project look more efficient.|
 
 ## Accessibility Report
 For each Principle of Universal Design, write 2-5 sentences or point form notes explaining which features your program adhere to that principle. If you do not have any such features you can either:
