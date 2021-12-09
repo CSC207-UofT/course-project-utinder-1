@@ -137,7 +137,7 @@ Each group member should include a link to a significant pull request (or two if
 | Member  | Pull Request |
 | ------------- | ------------- |
 | Justin Cha |  |
-| Aaditya Mandal  | |
+| Aaditya Mandal  | The best pull request for me was [https://github.com/Bantonio12/Utinderlogin/pull/10], where we were able to modify homepage to get a working tasks section so that the user can input and remove tasks smoothly. Also modified the greeting to be based on the time of the day. Overall homepage was finalized during that pull request and it came out to be really nice at the end. |
 | Michael Rubenstein  | The pull request that I'm proud of is https://github.com/Bantonio12/Utinderlogin/pull/6 in which Kex and I refactored the entire Post related classes to make it adhere better to Clean Architecture, deleted useless code , changed the Java Docs and added more unit tests. |
 | Kex Zhang  | The pull request that I'm proud of is https://github.com/Bantonio12/Utinderlogin/pull/3, in which I updated the basic functionality of community page, including making post, viewing post, commenting post, and commenting on comment, while updates the corresponding information to firestore database. |
 | Ellie Kang  | (I was having rolling back issue in Github so I passed the files to Rachel and she did the pull request for me.) One of the jobs I am proud of the most is https://github.com/Bantonio12/Utinderlogin/pull/4. I used the basic UI tool from Aaditya and fixed the basic UI design. I also implemented adding task function as we planned. Rachel was helping me to resolve the errors in homepage.java.  |
