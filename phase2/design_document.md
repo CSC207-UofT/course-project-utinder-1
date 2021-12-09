@@ -140,7 +140,7 @@ Each group member should include a link to a significant pull request (or two if
 | Aaditya Mandal  | |
 | Michael Rubenstein  | |
 | Kex Zhang  | |
-| Ellie Kang  | |
+| Ellie Kang  | (I was having rolling back issue in Github so I passed the files to Rachel and she did the pull request for me.) One of the jobs I am proud of the most is https://github.com/Bantonio12/Utinderlogin/pull/4. I used the basic UI tool from Aaditya and fixed the basic UI design. I also implemented adding task function as we planned. Rachel was helping me to resolve the errors in homepage.java.  |
 | Rachel Seong  | One of the pull requests that I'm proud with is [Pull request #7](https://github.com/Bantonio12/Utinderlogin/pull/7). In this request, I was able to extract only the data of the user who is currently signed in this app, which indeed extended our functionality. Furthermore, doing some refactoring in the code made the entire project look more efficient.|
 
 ## Accessibility Report
